@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Mohsina Firdous Kamarudeen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-wrapper { padding-top: 100px; min-height: 100vh; background: var(--color-bg-alt); }
+        .page-header { padding: 60px 0; background: var(--color-white); border-bottom: 1px solid var(--color-border); }
+        .page-title { font-family: var(--font-display); font-size: 56px; font-weight: 600; }
+        .resume-actions { display: flex; gap: 16px; margin-top: 24px; }
+        .resume-section { padding: 60px 0; }
+        .resume-content { max-width: 900px; margin: 0 auto; padding: 60px; background: var(--color-white); border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); }
+        .resume-header { border-bottom: 4px solid var(--color-accent); padding-bottom: 24px; margin-bottom: 32px; }
+        .resume-name { font-family: var(--font-display); font-size: 36px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px; }
+        .resume-title { font-size: 18px; color: var(--color-accent); font-weight: 600; margin-bottom: 16px; }
+        .resume-contact { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; color: var(--color-text-light); }
+        .resume-section-title { font-size: 18px; font-weight: 700; color: var(--color-primary); border-bottom: 2px solid var(--color-border); padding-bottom: 8px; margin-bottom: 16px; margin-top: 32px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .resume-job { margin-bottom: 24px; }
+        .resume-job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 12px; }
+        .resume-job-title { font-weight: 700; font-size: 16px; color: var(--color-primary); }
+        .resume-job-company { font-style: italic; color: var(--color-text-light); font-size: 14px; margin-top: 4px; }
+        .resume-job-duration { font-size: 13px; color: var(--color-accent); font-weight: 600; white-space: nowrap; }
+        .resume-list { list-style-position: inside; font-size: 13px; line-height: 1.7; color: var(--color-text-light); }
+        .resume-list li { margin-bottom: 6px; }
+        .resume-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+        @media print { .page-header, nav, footer, .resume-actions { display: none; } .resume-content { border: none; padding: 0; box-shadow: none; } .page-wrapper { padding-top: 0; } }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><span class="logo-text">MFK</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="publications.html" class="nav-link">Research</a>
+                <a href="resume.html" class="nav-link active">Resume</a>
+                <a href="index.html#contact" class="nav-link nav-cta">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Professional <span style="color: var(--color-accent);">Resume</span></h1>
+                <div class="resume-actions">
+                    <button class="btn btn-primary" onclick="window.print()">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7V3H15V7M5 14H4C3.46957 14 2.96086 13.7893 2.58579 13.4142C2.21071 13.0391 2 12.5304 2 12V9C2 8.46957 2.21071 7.96086 2.58579 7.58579C2.96086 7.21071 3.46957 7 4 7H16C16.5304 7 17.0391 7.21071 17.4142 7.58579C17.7893 7.96086 18 8.46957 18 9V12C18 12.5304 17.7893 13.0391 17.4142 13.4142C17.0391 13.7893 16.5304 14 16 14H15M5 11H15V17H5V11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Download PDF</span>
+                    </button>
+                    <a href="index.html" class="btn btn-secondary">Back to Home</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <div class="container">
+                <div class="resume-content">
+                    <div class="resume-header">
+                        <h1 class="resume-name">MOHSINA FIRDOUS KAMARUDEEN</h1>
+                        <p class="resume-title">AI Researcher | Deep Learning • Computer Vision • Data Science</p>
+                        <div class="resume-contact">
+                            <span>📧 mohsinafirdousk@gmail.com</span>
+                            <span>📱 +968 95095909</span>
+                            <span>🔗 linkedin.com/in/mohsina-firdous-k</span>
+                            <span>💻 github.com/firruk</span>
+                            <span>📍 Muscat, Oman</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="resume-section-title">Professional Summary</h2>
+                        <p style="text-align: justify; font-size: 14px; line-height: 1.6; color: var(--color-text-light);">
+                            Results-driven AI Researcher with 3+ years of specialized experience in deep learning, computer vision, and data science. Published author of 5+ peer-reviewed papers in IEEE and Scopus-indexed journals. Proven track record in developing and deploying production-ready ML solutions for medical imaging, predictive maintenance, and mobile applications. Expert in model optimization, TensorFlow Lite deployment, and cross-platform development using Flutter.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="resume-section-title">Key Competencies</h2>
+                        <div class="resume-grid">
+                            <ul class="resume-list">
+                                <li>Deep Learning (CNN, LSTM)</li>
+                                <li>Computer Vision (YOLO, R-CNN)</li>
+                                <li>Medical Image Analysis</li>
+                            </ul>
+                            <ul class="resume-list">
+                                <li>TensorFlow/Keras & TFLite</li>
+                                <li>Flutter Mobile Development</li>
+                                <li>Object Detection & Segmentation</li>
+                            </ul>
+                            <ul class="resume-list">
+                                <li>Research & Technical Writing</li>
+                                <li>Predictive Maintenance Systems</li>
+                                <li>API Development (Laravel)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="resume-section-title">Professional Experience</h2>
+                        
+                        <div class="resume-job">
+                            <div class="resume-job-header">
+                                <div>
+                                    <div class="resume-job-title">AI Researcher - Dental Imaging</div>
+                                    <div class="resume-job-company">Private Research Project (Dentist Collaboration)</div>
+                                </div>
+                                <div class="resume-job-duration">Jan 2025 – Present</div>
+                            </div>
+                            <ul class="resume-list">
+                                <li>Architected cross-platform mobile application using Flutter and TensorFlow Lite achieving 92% accuracy with ResNet50 and AlexNet models</li>
+                                <li>Developed end-to-end object detection pipeline using YOLOv8 and Faster R-CNN with 88% mAP</li>
+                                <li>Implemented instance segmentation using Detectron2 for tooth-level mapping and anomaly detection</li>
+                                <li>Integrated intelligent chatbot reducing staff query handling time by 35%</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-job">
+                            <div class="resume-job-header">
+                                <div>
+                                    <div class="resume-job-title">Research Assistant</div>
+                                    <div class="resume-job-company">National University of Science and Technology, Oman</div>
+                                </div>
+                                <div class="resume-job-duration">Jan 2024 – Dec 2024</div>
+                            </div>
+                            <ul class="resume-list">
+                                <li>Co-authored 3+ peer-reviewed publications in IEEE and Scopus-indexed journals</li>
+                                <li>Achieved 94% fault classification accuracy using deep learning on SpectraQuest MFS platform</li>
+                                <li>Improved model performance by 18% using advanced feature engineering techniques (PCA, WPD)</li>
+                                <li>Led technical documentation and performance benchmarking for multiple research initiatives</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-job">
+                            <div class="resume-job-header">
+                                <div>
+                                    <div class="resume-job-title">Software Engineer</div>
+                                    <div class="resume-job-company">IRTS Oman</div>
+                                </div>
+                                <div class="resume-job-duration">Jul 2023 – Jun 2024</div>
+                            </div>
+                            <ul class="resume-list">
+                                <li>Delivered 8+ projects with 98% client satisfaction using Flutter and Laravel</li>
+                                <li>Reduced query response time by 45% through database optimization</li>
+                                <li>Accelerated development cycles by 30% using LLM integration</li>
+                                <li>Improved team productivity by 40% through cross-functional collaboration</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="resume-section-title">Education</h2>
+                        <div class="resume-job">
+                            <div class="resume-job-header">
+                                <div>
+                                    <div class="resume-job-title">Bachelor of Science (Honours)</div>
+                                    <div class="resume-job-company">Information Technology Management for Business</div>
+                                    <div style="font-size: 13px; color: var(--color-text-lighter); font-style: italic;">National University of Science and Technology, Oman</div>
+                                </div>
+                                <div class="resume-job-duration">2018 – 2022</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="resume-section-title">Publications & Research</h2>
+                        <ul class="resume-list">
+                            <li><strong>Intelligent Fault Diagnosis of Rotating Machinery Using Deep Learning Algorithms</strong> - IEEE/Scopus</li>
+                            <li><strong>Machine Learning based Financial Management Mobile Application</strong> - IEEE Conference</li>
+                            <li><strong>Advanced Mobile Application Powered with Machine Learning for Healthcare Services</strong> - Scopus Indexed</li>
+                            <li><strong>Performance Analysis of ML and DL Techniques in Diagnosing Imbalance</strong> - IEEE Conference</li>
+                            <li><strong>Comparison Analysis of ANN and XGBoost with WPD for AI in Condition Monitoring</strong> - Scopus Indexed</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="resume-section-title">Technical Skills</h2>
+                        <div class="resume-grid" style="font-size: 13px;">
+                            <div>
+                                <strong>Machine Learning & AI:</strong>
+                                <p style="margin: 0; color: var(--color-text-light);">TensorFlow, Keras, PyTorch, Scikit-learn, YOLOv8, Faster R-CNN, Detectron2, ResNet, CNN, LSTM</p>
+                            </div>
+                            <div>
+                                <strong>Programming:</strong>
+                                <p style="margin: 0; color: var(--color-text-light);">Python, Dart, PHP, JavaScript, SQL, HTML/CSS, Flutter, Laravel, React</p>
+                            </div>
+                            <div>
+                                <strong>Data Science:</strong>
+                                <p style="margin: 0; color: var(--color-text-light);">Pandas, NumPy, Matplotlib, Tableau, Power BI, PCA, WPD, Statistical Analysis</p>
+                            </div>
+                            <div>
+                                <strong>Tools:</strong>
+                                <p style="margin: 0; color: var(--color-text-light);">CVAT, Postman, Figma, Docker, Microsoft Azure, Jupyter, Kaggle, Git/GitHub</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="resume-section-title">Certifications & Achievements</h2>
+                        <div class="resume-grid">
+                            <div>
+                                <strong style="font-size: 14px;">Certifications:</strong>
+                                <ul class="resume-list" style="margin-top: 8px;">
+                                    <li>SQL - MySQL for Data Analytics</li>
+                                    <li>Python for Research</li>
+                                    <li>Linear Algebra and Feature Selection</li>
+                                    <li>Statistics Foundations: The Basics</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong style="font-size: 14px;">Awards:</strong>
+                                <ul class="resume-list" style="margin-top: 8px;">
+                                    <li>3x Awards of Excellence</li>
+                                    <li>First Prize - Best Technical Project</li>
+                                    <li>Certificate of Merit</li>
+                                    <li>Hackathon Winner (RMSLE: 0.0409)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="resume-section-title">Additional Information</h2>
+                        <p style="font-size: 13px; color: var(--color-text-light);"><strong>Languages:</strong> English (Fluent), Arabic (Professional Working Proficiency)</p>
+                        <p style="font-size: 13px; color: var(--color-text-light);"><strong>Current Location:</strong> Muscat, Oman</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand"><div class="footer-logo">MFK</div><p class="footer-tagline">AI Researcher • Deep Learning • Computer Vision</p></div>
+                <div class="footer-links">
+                    <a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="index.html#experience">Experience</a>
+                    <a href="projects.html">Projects</a><a href="publications.html">Research</a><a href="resume.html">Resume</a><a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; <span id="currentYear"></span> Mohsina Firdous Kamarudeen. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>

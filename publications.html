@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Publications - Mohsina Firdous Kamarudeen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-wrapper { padding-top: 100px; min-height: 100vh; }
+        .page-header { padding: 60px 0; background: var(--color-bg-alt); border-bottom: 1px solid var(--color-border); }
+        .page-title { font-family: var(--font-display); font-size: 56px; font-weight: 600; margin-bottom: 16px; }
+        .page-subtitle { font-size: 18px; color: var(--color-text-light); max-width: 700px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--color-accent); text-decoration: none; font-weight: 600; margin-bottom: 24px; transition: gap 0.3s ease; }
+        .back-link:hover { gap: 12px; }
+        .search-section { padding: 40px 0; background: var(--color-white); border-bottom: 1px solid var(--color-border); position: sticky; top: 80px; z-index: 100; }
+        .search-content { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+        .search-box { flex: 1; min-width: 300px; position: relative; }
+        .search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); font-size: 18px; color: var(--color-text-lighter); }
+        .search-box input { width: 100%; padding: 12px 16px 12px 48px; border: 1px solid var(--color-border); border-radius: 50px; font-size: 16px; transition: all 0.3s ease; }
+        .search-box input:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(193, 127, 58, 0.1); }
+        .tag-filters { display: flex; gap: 8px; flex-wrap: wrap; }
+        .tag-filter { padding: 8px 16px; background: var(--color-white); border: 1px solid var(--color-border); color: var(--color-text-light); border-radius: 50px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+        .tag-filter:hover { border-color: var(--color-accent); color: var(--color-accent); }
+        .tag-filter.active { background: var(--color-primary); color: var(--color-white); border-color: var(--color-primary); }
+        .publications-content { padding: 80px 0; }
+        .publications-wrapper { max-width: 900px; margin: 0 auto; }
+        .stats-banner { background: var(--color-primary); color: var(--color-white); padding: 60px 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; text-align: center; }
+        .stat-value { font-size: 48px; font-weight: 700; margin-bottom: 8px; }
+        .stat-label { font-size: 16px; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><span class="logo-text">MFK</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="publications.html" class="nav-link active">Research</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="index.html#contact" class="nav-link nav-cta">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <section class="page-header">
+            <div class="container">
+                <a href="index.html#research-preview" class="back-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M16 10H4M4 10L10 16M4 10L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Back to Home
+                </a>
+                <h1 class="page-title">Research <span style="color: var(--color-accent);">Publications</span></h1>
+                <p class="page-subtitle">Peer-reviewed publications in IEEE and Scopus-indexed journals focusing on deep learning, computer vision, and intelligent systems.</p>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="container">
+                <div class="search-content">
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="searchInput" placeholder="Search publications...">
+                    </div>
+                    <div class="tag-filters" id="tagFilters"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="publications-content">
+            <div class="container">
+                <div class="publications-wrapper">
+                    <div class="publications-list" id="publicationsList"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-banner">
+            <div class="container">
+                <div class="stats-grid">
+                    <div><div class="stat-value">5</div><div class="stat-label">Published Papers</div></div>
+                    <div><div class="stat-value">IEEE/Scopus</div><div class="stat-label">Indexed Journals</div></div>
+                    <div><div class="stat-value">2023-2025</div><div class="stat-label">Publication Years</div></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand"><div class="footer-logo">MFK</div><p class="footer-tagline">AI Researcher • Deep Learning • Computer Vision</p></div>
+                <div class="footer-links">
+                    <a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="index.html#experience">Experience</a>
+                    <a href="projects.html">Projects</a><a href="publications.html">Research</a><a href="resume.html">Resume</a><a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; <span id="currentYear"></span> Mohsina Firdous Kamarudeen. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        let currentTag = 'All', currentSearch = '';
+        
+        function displayPublications(publications) {
+            const container = document.getElementById('publicationsList');
+            container.innerHTML = publications.map(pub => `
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <h3 class="publication-title">${pub.title}</h3>
+                        <p class="publication-meta">${pub.journal} • ${pub.year}</p>
+                    </div>
+                    <p class="publication-authors">${pub.authors}</p>
+                    <p class="publication-abstract">${pub.abstract}</p>
+                    <div class="publication-tags">
+                        ${pub.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function filterPublications(search, tag) {
+            const pubs = portfolioData.publications.filter(pub => {
+                const matchesSearch = !search || pub.title.toLowerCase().includes(search.toLowerCase()) || 
+                                     pub.abstract.toLowerCase().includes(search.toLowerCase());
+                const matchesTag = tag === 'All' || pub.tags.includes(tag);
+                return matchesSearch && matchesTag;
+            });
+            displayPublications(pubs);
+        }
+        
+        function filterByTag(tag) {
+            currentTag = tag;
+            filterPublications(currentSearch, tag);
+            document.querySelectorAll('.tag-filter').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const allTags = new Set(['All']);
+            portfolioData.publications.forEach(pub => pub.tags.forEach(tag => allTags.add(tag)));
+            
+            document.getElementById('tagFilters').innerHTML = Array.from(allTags).map(tag => `
+                <button class="tag-filter ${tag === 'All' ? 'active' : ''}" onclick="filterByTag('${tag}')">${tag}</button>
+            `).join('');
+            
+            document.getElementById('searchInput').addEventListener('input', function(e) {
+                currentSearch = e.target.value;
+                filterPublications(currentSearch, currentTag);
+            });
+            
+            displayPublications(portfolioData.publications);
+        });
+    </script>
+</body>
+</html>
