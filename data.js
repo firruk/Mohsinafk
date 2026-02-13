@@ -3,18 +3,20 @@
 const portfolioData = {
   personalInfo: {
     name: "Mohsina Firdous Kamarudeen",
-    title: "Technical Data Analyst | AI Researcher | Machine Learning Engineer",
-    tagline: "IEEE/Scopus Author | TFLite Developer | Expert in Python & SQL",
+    title: "Data Analyst · Machine Learning Engineer · Data Scientist · Tech Consultant",
+    tagline: "Python & SQL · ML & AI · Analytics & Research · Sydney-based, full work rights in Australia",
     email: "mohsinafirdousk@gmail.com",
     phone: "+61 494303526",
-    location: "Sydney, NSW (Full Work Rights)",
+    location: "Sydney, NSW (Full Work Rights in Australia)",
     linkedin: "linkedin.com/in/mohsina-firdous-k",
     github: "github.com/firruk",
     kaggle: "kaggle.com/mochufk",
-    bio: "Technical Data Analyst with 3+ years of experience transforming complex datasets into production-ready Machine Learning solutions. Proven track record in Healthcare and Industrial sectors with 5+ peer-reviewed publications. Expert in bridging the gap between academic research and scalable business automation.",
+    bio: "I help teams turn data into decisions. With 3+ years across data analysis, machine learning, and applied research, I've delivered in healthcare, finance, and industrial settings—from dashboards and predictive models to peer-reviewed publications. I'm equally at home in hands-on analytics, ML engineering, data science, and technical consulting. Based in Sydney with full work rights; open to full-time, contract, and consulting roles.",
     yearsExperience: "3+",
     publicationsCount: 5,
-    projectsCount: 10
+    projectsCount: 10,
+    rolesOpenTo: "Machine Learning · Data Analysis · Data Science · Tech & Data Consulting · Research",
+    heroLabel: "Open to Data, ML & Tech roles"
   },
 
   publications: [
@@ -22,30 +24,30 @@ const portfolioData = {
       id: 1,
       title: "Intelligent Fault Diagnosis of Rotating Machinery Using Deep Learning Algorithms",
       journal: "IEEE/Scopus Indexed",
-      year: 2024,
-      authors: "Mohsina Firdous K., et al.",
+      year: 2025,
+      authors: "",
       abstract: "Comparative analysis of CNN, LSTM architectures for industrial predictive maintenance using SpectraQuest MFS platform.",
-      link: "https://www.researchgate.net/publication/384874362",
+      link: "https://ieeexplore.ieee.org/document/10963102",
       tags: ["Deep Learning", "CNN", "LSTM", "Predictive Maintenance"]
     },
     {
       id: 2,
       title: "Machine Learning based Financial Management Mobile Application to enhance College Students' Financial Literacy",
-      journal: "IEEE Conference",
+      journal: "SCOPUS indexed",
       year: 2023,
-      authors: "Mohsina Firdous K., et al.",
+      authors: "",
       abstract: "Research on ML integration in mobile solutions for enhancing financial literacy among college students.",
-      link: "#",
+      link: "https://files.eric.ed.gov/fulltext/ED654467.pdf",
       tags: ["Machine Learning", "Mobile App", "Flutter", "Financial Literacy"]
     },
     {
       id: 3,
       title: "An Advanced Mobile Application Powered with Machine Learning to Provide Improved Healthcare Services",
-      journal: "Scopus Indexed",
-      year: 2023,
-      authors: "Mohsina Firdous K., et al.",
+      journal: "Journal of Engineering and Applied Sciences Technology",
+      year: 2022,
+      authors: "",
       abstract: "Research on ML integration in healthcare delivery systems through mobile applications.",
-      link: "#",
+      link: "https://onlinescientificresearch.com/articles/an-advanced-mobile-application-powered-with-machine-learning-to-provide-improved-healthcare-services.pdf",
       tags: ["Healthcare", "Machine Learning", "Mobile Development"]
     },
     {
@@ -53,19 +55,19 @@ const portfolioData = {
       title: "Performance Analysis of Machine Learning and Deep Learning Techniques in Diagnosing Imbalance Using Machine Fault Simulator",
       journal: "International Journal of Engineering Trends and Technology",
       year: 2024,
-      authors: "Mohsina Firdous K., et al.",
+      authors: "",
       abstract: "Case study on industrial fault detection optimization using ML and DL techniques.",
-      link: "#",
+      link: "https://ijettjournal.org/archive/ijett-v73i1p123",
       tags: ["Machine Learning", "Deep Learning", "Fault Diagnosis"]
     },
     {
       id: 5,
       title: "Comparison Analysis of ANN and XGBoost Algorithm with WPD in exploring the application of AI in condition monitoring",
-      journal: "Scopus Indexed",
-      year: 2024,
-      authors: "Mohsina Firdous K., et al.",
+      journal: "IEEE/Scopus Indexed",
+      year: 2025,
+      authors: "",
       abstract: "Application research for oil and gas industries using ANN, XGBoost, and Wavelet Packet Decomposition.",
-      link: "#",
+      link: "Comparison Analysis of ANN and XGBoost Algorithm with WPD in exploring the application of Artificial Intelligence in condition monitoring for oil and gas industries",
       tags: ["ANN", "XGBoost", "WPD", "Condition Monitoring"]
     }
   ],
@@ -82,7 +84,8 @@ const portfolioData = {
         "92% classification accuracy",
         "88% mAP for tooth segmentation",
         "Dynamic report editor for dentists"
-      ]
+      ],
+      link:"https://github.com/firruk/dental_app_emergent.git"
     },
     {
       id: 2,
@@ -95,7 +98,9 @@ const portfolioData = {
         "Synthesizes data in < 3 minutes",
         "Automated paper validation",
         "Research productivity tool"
-      ]
+      ],
+      link:""
+
     },
     {
       id: 3,
@@ -108,7 +113,9 @@ const portfolioData = {
         "Real-time telemetry streaming",
         "Predictive anomaly detection",
         "Interactive BI dashboards"
-      ]
+      ],
+      link:""
+
     },
     {
       id: 4,
@@ -121,10 +128,27 @@ const portfolioData = {
         "94% fault classification",
         "18% performance boost via WPD",
         "Processed 1,000+ vibration samples"
-      ]
+      ],
+      link:""
+
     },
     {
       id: 5,
+      title: "Student Engagement Analysis (365 machine learning challenge)",
+      description: "Analyzed and visualized data on student engagement for 35,000+ students using SQL, identifying key areas for improvement from January to October 2022. Built a Python-based machine learning model with 97% accuracy to predict student engagement, leading to new strategies to improve engagement.",
+      tech: ["Python", "Scikit-learn", "Machine learning", "Pandas","SQL"],
+      year: "2022",
+      category: "Data Analysis",
+      highlights: [
+        "RMSLE: 0.0409",
+        "First place winner",
+        "Production ready"
+      ],
+      link:"https://github.com/firruk/365_challenge_machine_learning/blob/main/365%20challenge%20-%20Copy/365_DATA_CHALLENGE_MACHINE_LEARNING.ipynb"
+
+    },
+    {
+      id: 6,
       title: "Investment Forecast Model",
       description: "Hackathon-winning machine learning model for investment forecasting with exceptional RMSLE score of 0.0409.",
       tech: ["Python", "Scikit-learn", "XGBoost", "Pandas"],
@@ -134,7 +158,9 @@ const portfolioData = {
         "RMSLE: 0.0409",
         "First place winner",
         "Production ready"
-      ]
+      ],
+      link:"https://www.kaggle.com/code/mochufk/al-majlis-ai-hackathon-investment-challenge"
+
     }
   ],
 
@@ -217,7 +243,7 @@ const portfolioData = {
 
   education: [
     {
-      degree: "Bachelor of Science (Honours)",
+      degree: "Bachelor of Science (Honours) Information Technology Management for Business",
       field: "Information Technology Management for Business",
       institution: "National University of Science and Technology, Oman",
       year: "2018 - 2022"
