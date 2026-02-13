@@ -216,7 +216,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 2.0rem;
     background: rgba(193, 127, 58, 0.1);
     border: 1px solid rgba(193, 127, 58, 0.2);
     border-radius: 50px;
@@ -480,7 +480,7 @@ body {
 }
 
 .section-header {
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: var(--spacing-2xl);
 }
 
 .section-number {
@@ -533,6 +533,8 @@ body {
 
 .lead-paragraph strong {
     color: var(--color-accent);
+    font-size: 25px;
+
 }
 
 .about-content p {
@@ -692,13 +694,18 @@ body {
 /* === SKILLS SECTION === */
 .skills-section {
     background: var(--color-bg-alt);
+    padding: var(--spacing-2xl) 0;
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-lg);
-    margin-bottom: var(--spacing-3xl);
+    /* This forces exactly 2 columns of equal width */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+    max-width: 1000px; /* Optional: keeps the cards from getting too wide on huge screens */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skill-category {
@@ -706,13 +713,22 @@ body {
     background: var(--color-white);
     border-radius: var(--radius-lg);
     border: 1px solid var(--color-border);
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-category:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border-color: var(--color-accent);
+}
+
+/* Mobile Responsive: Switch to 1 column on small screens */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .skill-category h3 {
@@ -730,19 +746,15 @@ body {
 
 .skill-tag {
     padding: 0.5rem 1rem;
-    background: var(--color-bg-alt);
-    color: var(--color-text-light);
+    background: var( --color-accent);
+    color: var(--color-bg);
     border-radius: var(--radius-md);
     font-size: 13px;
     font-weight: 500;
     transition: all 0.2s ease;
 }
 
-.skill-tag:hover {
-    background: var(--color-accent);
-    color: var(--color-white);
-    transform: translateY(-2px);
-}
+
 
 .credentials-section {
     display: grid;
@@ -876,8 +888,8 @@ body {
 }
 
 .publications-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    flex-direction: row;
     gap: var(--spacing-xl);
     max-width: 900px;
     margin: 0 auto;
