@@ -34,22 +34,29 @@
     </style>
 </head>
 <body>
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo"><span class="logo-text">MFK</span></a>
-            <div class="nav-links" id="navLinks">
-                <a href="index.html#home" class="nav-link">Home</a>
-                <a href="index.html#about" class="nav-link">About</a>
-                <a href="index.html#experience" class="nav-link">Experience</a>
-                <a href="index.html#skills" class="nav-link">Skills</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="publications.html" class="nav-link active">Research</a>
-                <a href="resume.html" class="nav-link">Resume</a>
-                <a href="index.html#contact" class="nav-link nav-cta">Contact</a>
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+   <!-- Navigation -->
+   <nav id="navbar">
+    <div class="nav-container">
+        <a href="#home" class="logo">
+            <span class="logo-text">MFK</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html#home" class="nav-link">Home</a>
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="index.html#experience" class="nav-link">Experience</a>
+            <a href="index.html#skills" class="nav-link">Skills</a>
+            <a href="projects.html" class="nav-link active">Projects</a>
+            <a href="publications.html" class="nav-link">Research</a>
+            <a href="resume.html" class="nav-link">Resume</a>
+            <a href="index.html#contact" class="nav-link nav-cta">Contact</a>
         </div>
-    </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
 
     <div class="page-wrapper">
         <section class="page-header">
@@ -115,21 +122,23 @@
         let currentTag = 'All', currentSearch = '';
         
         function displayPublications(publications) {
-            const container = document.getElementById('publicationsList');
-            container.innerHTML = publications.map(pub => `
-                <div class="publication-card">
-                    <div class="publication-header">
-                        <h3 class="publication-title">${pub.title}</h3>
-                        <p class="publication-meta">${pub.journal} • ${pub.year}</p>
-                    </div>
-                    <p class="publication-authors">${pub.authors}</p>
-                    <p class="publication-abstract">${pub.abstract}</p>
-                    <div class="publication-tags">
-                        ${pub.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-                    </div>
+    const container = document.getElementById('publicationsList');
+    container.innerHTML = publications.map(pub => `
+        <a href="${pub.link}" target="_blank" class="publication-card-link" style="text-decoration: none; color: inherit;">
+            <div class="publication-card" style="cursor: pointer; transition: background 0.3s ease;">
+                <div class="publication-header">
+                    <h3 class="publication-title">${pub.title}</h3>
+                    <p class="publication-meta">${pub.journal} • ${pub.year}</p>
                 </div>
-            `).join('');
-        }
+                <p class="publication-authors">${pub.authors}</p>
+                <p class="publication-abstract">${pub.abstract}</p>
+                <div class="publication-tags">
+                    ${pub.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
+            </div>
+        </a>
+    `).join('');
+}
         
         function filterPublications(search, tag) {
             const pubs = portfolioData.publications.filter(pub => {
