@@ -28,9 +28,12 @@
     </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo"><span class="logo-text">MFK</span></a>
+            <a href="#home" class="logo">
+                <span class="logo-text">MFK</span>
+            </a>
             <div class="nav-links" id="navLinks">
                 <a href="index.html#home" class="nav-link">Home</a>
                 <a href="index.html#about" class="nav-link">About</a>
@@ -41,7 +44,11 @@
                 <a href="resume.html" class="nav-link">Resume</a>
                 <a href="index.html#contact" class="nav-link nav-cta">Contact</a>
             </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -109,21 +116,23 @@
     <script src="script.js"></script>
     <script>
         function displayProjects(projects) {
-            const container = document.getElementById('projectsGrid');
-            container.innerHTML = projects.map(project => `
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-category">${project.category}</span>
-                        <span class="project-year">${project.year}</span>
-                    </div>
-                    <h3 class="project-title">${project.title}</h3>
-                    <p class="project-desc">${project.description}</p>
-                    <div class="project-tech">
-                        ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                    </div>
+    const container = document.getElementById('projectsGrid');
+    container.innerHTML = projects.map(project => `
+        <a href="${project.link}" target="_blank" class="project-card-link" style="text-decoration: none; color: inherit;">
+            <div class="project-card" style="height: 100%; transition: transform 0.3s ease;">
+                <div class="project-header">
+                    <span class="project-category">${project.category}</span>
+                    <span class="project-year">${project.year}</span>
                 </div>
-            `).join('');
-        }
+                <h3 class="project-title">${project.title}</h3>
+                <p class="project-desc">${project.description}</p>
+                <div class="project-tech">
+                    ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
+            </div>
+        </a>
+    `).join('');
+}
         
         function filterProjects(category) {
             const projects = portfolioData.projects;
