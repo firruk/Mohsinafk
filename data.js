@@ -1,20 +1,20 @@
-// Portfolio Data - Edit this file to update your content
+// Portfolio Data - Updated based on latest resume
 
 const portfolioData = {
   personalInfo: {
     name: "Mohsina Firdous Kamarudeen",
-    title: "AI Researcher | Deep Learning • Computer Vision • Data Science",
-    tagline: "IEEE/Scopus Author | TFLite Developer",
+    title: "Technical Data Analyst | AI Researcher | Machine Learning Engineer",
+    tagline: "IEEE/Scopus Author | TFLite Developer | Expert in Python & SQL",
     email: "mohsinafirdousk@gmail.com",
-    phone: "+968 95095909",
-    location: "Muscat, Oman",
+    phone: "+61 494303526",
+    location: "Sydney, NSW (Full Work Rights)",
     linkedin: "linkedin.com/in/mohsina-firdous-k",
     github: "github.com/firruk",
     kaggle: "kaggle.com/mochufk",
-    bio: "AI researcher and data science enthusiast with 3+ years of hands-on experience applying deep learning to medical imaging, industrial systems, and mobile applications. Co-authored 5+ peer-reviewed publications (IEEE, Scopus) in fault diagnosis, digital twins, and dental radiograph analysis. Passionate about making AI usable, deployable, and impactful.",
-    yearsExperience: 3,
+    bio: "Technical Data Analyst with 3+ years of experience transforming complex datasets into production-ready Machine Learning solutions. Proven track record in Healthcare and Industrial sectors with 5+ peer-reviewed publications. Expert in bridging the gap between academic research and scalable business automation.",
+    yearsExperience: "3+",
     publicationsCount: 5,
-    projectsCount: 8
+    projectsCount: 10
   },
 
   publications: [
@@ -51,7 +51,7 @@ const portfolioData = {
     {
       id: 4,
       title: "Performance Analysis of Machine Learning and Deep Learning Techniques in Diagnosing Imbalance Using Machine Fault Simulator",
-      journal: "IEEE Conference",
+      journal: "International Journal of Engineering Trends and Technology",
       year: 2024,
       authors: "Mohsina Firdous K., et al.",
       abstract: "Case study on industrial fault detection optimization using ML and DL techniques.",
@@ -73,61 +73,61 @@ const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "Dental Radiograph Classification System",
-      description: "Cross-platform mobile application using Flutter and TensorFlow Lite for real-time dental radiograph classification (OPG, cephalometric, bitewing) with 92% accuracy.",
-      tech: ["Flutter", "TensorFlow Lite", "ResNet50", "AlexNet", "Python"],
+      title: "Dental Radiograph Classification & Segmentation",
+      description: "React Native & Flask mobile application for real-time dental radiograph classification and Mask R-CNN segmentation with 92% accuracy across 10,000+ images.",
+      tech: ["React Native", "Flask", "Mask R-CNN", "Detectron2", "Python"],
       year: "2025",
       category: "Medical AI",
       highlights: [
         "92% classification accuracy",
-        "Real-time mobile inference",
-        "Cross-platform deployment"
+        "88% mAP for tooth segmentation",
+        "Dynamic report editor for dentists"
       ]
     },
     {
       id: 2,
-      title: "Tooth Detection & Segmentation Pipeline",
-      description: "Complete object detection pipeline using YOLOv8 and Faster R-CNN for tooth identification and FDI numbering in panoramic X-rays with 88% mAP.",
-      tech: ["YOLOv8", "Faster R-CNN", "Detectron2", "Mask R-CNN", "CVAT"],
+      title: "LLM-Powered Research Generator",
+      description: "Automated research synthesis tool using Claude AI to transform PPT and poll data into validated papers in under 3 minutes.",
+      tech: ["Claude AI", "Python", "LLM", "NLP"],
       year: "2025",
-      category: "Computer Vision",
+      category: "Generative AI",
       highlights: [
-        "88% mAP accuracy",
-        "FDI numbering system",
-        "Instance segmentation"
+        "Synthesizes data in < 3 minutes",
+        "Automated paper validation",
+        "Research productivity tool"
       ]
     },
     {
       id: 3,
-      title: "Dental Chatbot Integration",
-      description: "Intelligent chatbot for patient denture consultations with clinical escalation protocols, reducing staff query handling time by 35%.",
-      tech: ["Flutter", "NLP", "ChatGPT API", "Laravel"],
-      year: "2025",
-      category: "Healthcare",
+      title: "IoT Sensor Detection & Monitoring",
+      description: "Azure-based IoT system streaming real-time telemetry data for industrial manufacturing monitoring and anomaly detection.",
+      tech: ["Azure IoT Hub", "Power BI", "Python", "SQL"],
+      year: "2024",
+      category: "Industrial AI",
       highlights: [
-        "35% time reduction",
-        "Clinical escalation",
-        "Patient engagement"
+        "Real-time telemetry streaming",
+        "Predictive anomaly detection",
+        "Interactive BI dashboards"
       ]
     },
     {
       id: 4,
       title: "Predictive Maintenance System",
-      description: "Deep learning system for industrial fault diagnosis using CNN, LSTM, and hybrid models on SpectraQuest MFS platform achieving 94% accuracy.",
-      tech: ["Python", "TensorFlow", "CNN", "LSTM", "LabVIEW", "NI DAQ"],
+      description: "Deep learning system for industrial fault diagnosis using CNN and LSTM on SpectraQuest MFS platform achieving 94% accuracy.",
+      tech: ["Python", "TensorFlow", "LabVIEW", "NI DAQ", "PCA/WPD"],
       year: "2024",
       category: "Industrial AI",
       highlights: [
         "94% fault classification",
-        "Real-time monitoring",
-        "Digital twin integration"
+        "18% performance boost via WPD",
+        "Processed 1,000+ vibration samples"
       ]
     },
     {
       id: 5,
       title: "Investment Forecast Model",
       description: "Hackathon-winning machine learning model for investment forecasting with exceptional RMSLE score of 0.0409.",
-      tech: ["Python", "Scikit-learn", "XGBoost", "Pandas", "NumPy"],
+      tech: ["Python", "Scikit-learn", "XGBoost", "Pandas"],
       year: "2023",
       category: "Finance",
       highlights: [
@@ -135,95 +135,55 @@ const portfolioData = {
         "First place winner",
         "Production ready"
       ]
-    },
-    {
-      id: 6,
-      title: "Financial Management Mobile App",
-      description: "ML-powered mobile application to enhance college students' financial literacy with intelligent recommendations and tracking.",
-      tech: ["Flutter", "Laravel", "MySQL", "Machine Learning"],
-      year: "2023",
-      category: "Mobile Development",
-      highlights: [
-        "Published research",
-        "ML recommendations",
-        "User-friendly interface"
-      ]
-    },
-    {
-      id: 7,
-      title: "Healthcare Services Platform",
-      description: "Advanced mobile application powered with machine learning to provide improved healthcare services and patient management.",
-      tech: ["Flutter", "Machine Learning", "Laravel", "MySQL"],
-      year: "2023",
-      category: "Healthcare",
-      highlights: [
-        "ML-powered diagnostics",
-        "Patient management",
-        "Real-time analytics"
-      ]
-    },
-    {
-      id: 8,
-      title: "Real-time Analytics Dashboard",
-      description: "Interactive Power BI dashboards for real-time data analytics using Microsoft Azure services for business intelligence.",
-      tech: ["Power BI", "Microsoft Azure", "SQL", "Python"],
-      year: "2023",
-      category: "Data Analytics",
-      highlights: [
-        "Real-time insights",
-        "Cloud integration",
-        "Business intelligence"
-      ]
     }
   ],
 
   skills: {
     "Machine Learning & AI": [
-      "TensorFlow", "Keras", "PyTorch", "Scikit-learn", "TensorFlow Lite",
-      "YOLOv8", "Faster R-CNN", "Mask R-CNN", "Detectron2", "ResNet",
-      "AlexNet", "CNN", "LSTM"
+      "TensorFlow", "Keras", "PyTorch", "Scikit-learn", "YOLOv8", 
+      "Faster R-CNN", "Mask R-CNN", "Detectron2", "ResNet", "AlexNet", 
+      "CNN", "LSTM", "Predictive Modeling"
     ],
-    "Programming & Development": [
-      "Python", "Dart", "PHP", "JavaScript", "SQL", "HTML/CSS",
-      "Flutter", "Laravel", "React", "LabVIEW"
+    "Data Analysis & Programming": [
+      "Python (Pandas, NumPy)", "SQL (MySQL, PostgreSQL)", "Statistical Analysis", 
+      "Feature Engineering", "PCA", "WPD", "Excel (Advanced)", "LabVIEW"
     ],
-    "Data Science & Analytics": [
-      "Pandas", "NumPy", "Matplotlib", "Seaborn", "Tableau", "Power BI",
-      "Excel", "PCA", "WPD", "Statistical Analysis"
+    "Data Visualization & BI": [
+      "Tableau", "Power BI", "Dashboard Design", "Automated Reporting", "Data Storytelling"
     ],
-    "Tools & Platforms": [
-      "CVAT", "Postman", "Figma", "Docker", "Microsoft Azure",
-      "Jupyter", "Google Colab", "Kaggle", "Git/GitHub"
+    "Development & Platforms": [
+      "React Native", "Flutter", "Flask", "Laravel", "RESTful APIs", 
+      "Microsoft Azure", "Docker", "CVAT", "Git/GitHub", "Hostinger"
     ]
   },
 
   experience: [
     {
       id: 1,
-      role: "AI Researcher - Dental Imaging",
-      company: "Private Research Project",
-      location: "Muscat, Oman",
+      role: "AI Researcher & ML Engineer",
+      company: "Private Research Project (Clinical Collaboration)",
+      location: "Sydney, NSW (Remote/Muscat)",
       duration: "Jan 2025 - Present",
-      description: "Leading AI research in dental imaging with focus on classification, detection, and segmentation.",
+      description: "Technical lead for an intelligent system presented at an AI Orthodontics conference in Saudi Arabia.",
       achievements: [
-        "Developed cross-platform mobile app with 92% classification accuracy",
-        "Built complete object detection pipeline with 88% mAP",
-        "Implemented instance segmentation using Detectron2",
-        "Reduced staff query handling time by 35% with chatbot integration"
+        "Developed Mask R-CNN pipelines for tooth segmentation achieving 88% mAP",
+        "Deployed React Native & Flask app with 92% accuracy on 10,000+ images",
+        "Built LLM-powered research generator reducing synthesis time to < 3 mins",
+        "Managed CVAT pipelines, increasing dataset integrity by 40%"
       ]
     },
     {
       id: 2,
-      role: "Research Assistant",
-      company: "National University of Science and Technology, Oman",
+      role: "Technical Research Assistant",
+      company: "National University of Science and Technology",
       location: "Muscat, Oman",
       duration: "Jan 2024 - Dec 2024",
-      description: "Conducted cutting-edge research in intelligent fault diagnosis and digital twin applications.",
+      description: "Conducted research in intelligent fault diagnosis and Digital Twin technologies.",
       achievements: [
         "Co-authored 3+ peer-reviewed IEEE/Scopus publications",
-        "Achieved 94% fault classification accuracy using deep learning",
-        "Improved model performance by 18% using advanced feature engineering",
-        "Led technical documentation and performance benchmarking"
+        "Achieved 94% fault classification accuracy by benchmarking CNN/LSTM",
+        "Improved model performance by 18% using PCA and WPD feature extraction",
+        "Processed 1,000+ vibration samples using LabVIEW and NI DAQ"
       ]
     },
     {
@@ -232,12 +192,25 @@ const portfolioData = {
       company: "IRTS Oman",
       location: "Muscat, Oman",
       duration: "Jul 2023 - Jun 2024",
-      description: "Full-stack development of client applications with focus on mobile and web platforms.",
+      description: "Full-stack development and IoT systems architecture.",
       achievements: [
-        "Delivered 8+ projects with 98% client satisfaction rate",
-        "Reduced query response time by 45% through database optimization",
-        "Accelerated development cycles by 30% using LLM integration",
-        "Improved team productivity by 40% through collaboration"
+        "Architected IoT sensor system using Azure IoT Hub and Power BI",
+        "Optimized MySQL schemas, reducing query response times by 45%",
+        "Developed interactive robots and chatbots using Python and Computer Vision",
+        "Integrated LLMs (ChatGPT) to increase dev efficiency by 30%"
+      ]
+    },
+    {
+      id: 4,
+      role: "Junior Analyst",
+      company: "Fabrication Industry Services Co LLC",
+      location: "Oman",
+      duration: "Apr 2021 - Jun 2023",
+      description: "Financial data analysis and KPI visualization for multi-branch operations.",
+      achievements: [
+        "Designed 10+ Tableau dashboards to visualize financial KPIs",
+        "Analyzed multi-branch data across 7 locations using SQL and Tally ERP",
+        "Reduced company tax liability by 10% through strategic VAT analysis"
       ]
     }
   ],
@@ -252,17 +225,16 @@ const portfolioData = {
   ],
 
   certifications: [
+    "IELTS Academic Overall Band Score 8.0",
     "SQL - MySQL for Data Analytics and Business Intelligence",
     "Python for Research",
     "Linear Algebra and Feature Selection",
-    "Introduction to Calculus",
-    "Statistics Foundations: The Basics"
+    "Statistics Foundations"
   ],
 
   awards: [
     "3x Awards of Excellence (Meritorious Performance)",
     "First Prize - Best Technical Project Competition",
-    "Certificate of Merit - Academic Excellence",
     "Hackathon Winner - Investment Forecast Model (RMSLE: 0.0409)"
   ]
 };
