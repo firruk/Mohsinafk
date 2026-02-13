@@ -67,11 +67,20 @@ function populateContent() {
     const data = portfolioData;
     
     populateExperience(data.experience);
-    populateSkills(data.skills);
-    populateCertificationsAndAwards(data.certifications, data.awards);
-    populateFeaturedProjects(data.projects.slice(0, 4));
+    
+    // 1. Organize Skills (Ensure your data.js has at least 4 categories)
+    populateSkills(data.skills); 
+
+    // 2. Only show 3 Projects
+    populateFeaturedProjects(data.projects.slice(0, 3));
+    
+    // 3. Keep top 3 Publications
     populateFeaturedPublications(data.publications.slice(0, 3));
+    
+    populateCertificationsAndAwards(data.certifications, data.awards);
 }
+
+
 
 function populateExperience(experiences) {
     const container = document.getElementById('experienceTimeline');
@@ -98,7 +107,8 @@ function populateSkills(skills) {
     const container = document.getElementById('skillsGrid');
     if (!container) return;
     
-    container.innerHTML = Object.entries(skills).map(([category, skillList]) => `
+    // Object.entries(skills).slice(0, 4) ensures we only take the first 4 categories
+    container.innerHTML = Object.entries(skills).slice(0, 4).map(([category, skillList]) => `
         <div class="skill-category">
             <h3>${category}</h3>
             <div class="skill-tags">
@@ -107,7 +117,6 @@ function populateSkills(skills) {
         </div>
     `).join('');
 }
-
 function populateCertificationsAndAwards(certifications, awards) {
     const certsContainer = document.getElementById('certsList');
     const awardsContainer = document.getElementById('awardsList');
@@ -126,17 +135,19 @@ function populateFeaturedProjects(projects) {
     if (!container) return;
     
     container.innerHTML = projects.map(project => `
-        <div class="project-card">
-            <div class="project-header">
-                <span class="project-category">${project.category}</span>
-                <span class="project-year">${project.year}</span>
+        <a href="${project.link || '#'}" ${project.link ? 'target="_blank"' : ''} class="project-card-link" style="text-decoration: none; color: inherit; display: block;">
+            <div class="project-card" style="height: 100%; transition: transform 0.3s ease;">
+                <div class="project-header">
+                    <span class="project-category">${project.category}</span>
+                    <span class="project-year">${project.year}</span>
+                </div>
+                <h3 class="project-title">${project.title}</h3>
+                <p class="project-desc">${project.description}</p>
+                <div class="project-tech">
+                    ${project.tech.slice(0, 5).map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
             </div>
-            <h3 class="project-title">${project.title}</h3>
-            <p class="project-desc">${project.description}</p>
-            <div class="project-tech">
-                ${project.tech.slice(0, 5).map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-            </div>
-        </div>
+        </a>
     `).join('');
 }
 
@@ -145,17 +156,18 @@ function populateFeaturedPublications(publications) {
     if (!container) return;
     
     container.innerHTML = publications.map(pub => `
-        <div class="publication-card">
-            <div class="publication-header">
-                <h3 class="publication-title">${pub.title}</h3>
-                <p class="publication-meta">${pub.journal} • ${pub.year}</p>
+        <a href="${pub.link || '#'}" ${pub.link ? 'target="_blank"' : ''} class="publication-card-link" style="text-decoration: none; color: inherit; display: block;">
+            <div class="publication-card" style="transition: background 0.3s ease;">
+                <div class="publication-header">
+                    <h3 class="publication-title">${pub.title}</h3>
+                    <p class="publication-meta">${pub.journal} • ${pub.year}</p>
+                </div>
+                <p class="publication-abstract">${pub.abstract}</p>
+                <div class="publication-tags">
+                    ${pub.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
             </div>
-            <p class="publication-authors">${pub.authors}</p>
-            <p class="publication-abstract">${pub.abstract}</p>
-            <div class="publication-tags">
-                ${pub.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-            </div>
-        </div>
+        </a>
     `).join('');
 }
 
