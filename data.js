@@ -358,8 +358,8 @@ const portfolioData = {
     {
       id: 1,
       role: "ML Engineer & Full-Stack Developer",
-      company: "Healthcare Technology - Freelance",
-      location: "Sydney-based (Remote collaboration)",
+      company: "Healthcare Technology - Oman Dental College",
+      location: "Remote collaboration",
       duration: "Jan 2025 - Present",
       
       // Description appeals to MULTIPLE roles
@@ -388,7 +388,7 @@ const portfolioData = {
     
     {
       id: 2,
-      role: "Research Engineer & Data Scientist",
+      role: "Technical Research Assistant",
       company: "National University of Science and Technology, Oman",
       location: "Muscat, Oman",
       duration: "Jan 2024 - Dec 2024",
