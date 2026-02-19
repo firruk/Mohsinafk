@@ -83,274 +83,228 @@ const portfolioData = {
   // ============================================================================
   // PROJECTS - Showcases BREADTH across tech stack
   // ============================================================================
-  projects: [
+projects: [
     {
       id: 1,
       title: "AI-Powered Medical Imaging Platform",
       shortTitle: "Medical AI Platform",
       description: "Full-stack Computer Vision system with mobile app, backend API, ML inference, and automated reporting pipeline.",
-      
-      // What makes this impressive for ALL tech roles
-      techHighlight: "End-to-end system: React Native frontend, Flask REST API, TensorFlow model serving, PostgreSQL database, automated PDF generation, CVAT annotation pipeline.",
-      
+      techHighlight: "End-to-end system: React Native frontend, Flask REST API, TensorFlow/Mask R-CNN model serving, PostgreSQL database, automated PDF generation, CVAT annotation pipeline.",
       problem: "Healthcare providers spending 15-20 minutes manually reviewing medical images per patient, creating workflow bottlenecks.",
-      solution: "Built production ML system with cross-platform mobile app enabling real-time AI classification (92% accuracy) and automated reporting.",
-      impact: "87% time reduction (15 mins → 2 mins), enabling 30% capacity increase. Deployed across 2 clinics serving 150+ patients/month.",
-      
-      tech: ["Python", "TensorFlow", "PyTorch", "Mask R-CNN", "Detectron2", "React Native", "Flask", "PostgreSQL", "REST APIs", "CVAT", "Docker"],
+      solution: "Built production ML system with cross-platform mobile app enabling real-time AI classification (92% accuracy) and automated clinical reporting.",
+      impact: "87% time reduction (15 mins → 2 mins per scan), 70% reduction in documentation time. Deployed across clinics serving 150+ patients/month.",
+      tech: ["Python", "TensorFlow", "PyTorch", "Mask R-CNN", "React Native", "Flask", "PostgreSQL", "REST APIs", "CVAT", "Docker", "LLMs"],
       year: "2025",
       category: "Full-Stack AI",
-      
-      // What each role sees
       relevanceByRole: {
-        mlEngineer: "Computer Vision model training, optimization, deployment. 92% classification, 88% mAP segmentation.",
+        mlEngineer: "Computer Vision model training, optimization, and deployment. 92% classification, 88% mAP segmentation.",
         dataScientist: "10,000+ image dataset analysis, feature engineering, model performance optimization.",
-        softwareEngineer: "React Native app, Flask backend, REST APIs, PostgreSQL, automated reporting pipeline.",
+        softwareEngineer: "React Native app, Flask backend, REST APIs, PostgreSQL, automated PDF reporting pipeline.",
         dataEngineer: "ETL pipeline for medical images, annotation workflow, data quality validation.",
         fullStack: "Mobile frontend + backend API + database + ML model integration + deployment."
       },
-      
       metrics: {
         dataProcessed: "10,000+ medical images",
-        accuracy: "92% classification, 88% segmentation",
+        accuracy: "92% classification, 88% segmentation mAP",
         performance: "87% time reduction",
-        scale: "2 clinics, 150+ patients/month",
-        techStack: "8+ technologies integrated"
+        scale: "150+ patients/month",
+        techStack: "11 technologies integrated"
       },
-      
       highlights: [
-        "Built complete production system from data collection to deployment",
-        "92% ML classification accuracy on 10,000+ images",
-        "88% mAP instance segmentation with Mask R-CNN",
-        "Cross-platform mobile app (React Native) with offline capability",
-        "Flask REST API handling real-time inference requests",
-        "Automated PDF report generation with verified AI results",
-        "CVAT annotation pipeline (40% quality improvement)"
+        "Built complete production system from data collection to clinical deployment",
+        "92% ML classification accuracy and 88% segmentation mAP using Mask R-CNN",
+        "Cross-platform mobile app (React Native + Flask) with 99% accuracy across 9 radiograph types",
+        "Automated PDF clinical report generation with AI-detected findings",
+        "CVAT annotation pipeline — 40% quality improvement, 400 → 120 hours processing time",
+        "LLM-powered research automation tool cutting paper preparation from 3 days to 3 hours",
+        "Showcased at international AI in Orthodontics conference (200+ dental professionals)"
       ],
-      
-      link: "https://github.com/firruk/dental_app_emergent.git"
+      link: "https://github.com/firruk/ODC-Dental-Teeth-Analyses-Website"
     },
-    
+
     {
       id: 2,
-      title: "Industrial IoT Analytics Platform",
-      shortTitle: "IoT Analytics Platform",
-      description: "Real-time data streaming platform using Azure IoT Hub + Power BI for predictive maintenance across 50+ industrial devices.",
-      
-      techHighlight: "Cloud infrastructure: Azure IoT Hub, event streaming, real-time dashboards, anomaly detection, automated alerting.",
-      
-      problem: "Manufacturing operations lacked real-time visibility into 50+ devices, resulting in reactive maintenance and unexpected downtime.",
-      solution: "Architected cloud-based IoT platform streaming telemetry data, processing 1M+ events daily with automated anomaly detection.",
-      impact: "25% downtime reduction, 40% faster incident response, $200K+ estimated annual savings.",
-      
-      tech: ["Azure IoT Hub", "Python", "SQL", "Power BI", "Real-Time Analytics", "Time-Series DB", "Alert Systems"],
-      year: "2024",
-      category: "Cloud & IoT",
-      
+      title: "Research Paper Generator Desktop App",
+      shortTitle: "AI Research Generator",
+      description: "First-of-its-kind LLM-powered desktop application that integrates live PowerPoint poll data to automatically generate complete research papers with literature reviews and data visualisations.",
+      techHighlight: "LLM integration pipeline: PowerPoint poll data extraction, automated literature synthesis, data visualisation generation, structured paper output.",
+      problem: "Researchers spending 3+ days manually synthesising poll data, writing literature reviews, and generating visualisations for conference papers.",
+      solution: "Built a desktop application that captures live poll responses from PowerPoint presentations and feeds them into an LLM pipeline to automatically generate structured research papers.",
+      impact: "Paper preparation time reduced from 3 days to 3 hours. Demonstrated live at an international AI in Orthodontics conference in Saudi Arabia to 200+ dental professionals.",
+      tech: ["Python", "LLMs", "NLP", "PowerPoint API", "Data Visualisation", "Desktop App Development"],
+      year: "2025",
+      category: "AI Automation",
       relevanceByRole: {
-        dataEngineer: "Real-time data pipelines, event streaming, time-series database, ETL at scale.",
-        mlEngineer: "Anomaly detection models, predictive maintenance, time-series forecasting.",
-        softwareEngineer: "Azure cloud architecture, microservices, API development, system integration.",
-        dataScientist: "Sensor data analysis, statistical modeling, KPI development, dashboard design.",
-        cloudEngineer: "Azure IoT Hub, cloud infrastructure, scaling, monitoring, DevOps."
+        mlEngineer: "LLM integration, prompt engineering, automated NLP pipeline.",
+        dataScientist: "Automated data analysis, visualisation generation, research synthesis.",
+        softwareEngineer: "Desktop application architecture, API integration, workflow automation.",
+        dataAnalyst: "Automated reporting, data storytelling, insights generation at scale.",
+        researcher: "Research automation, literature review synthesis, conference presentation tool."
       },
-      
       metrics: {
-        devicesMonitored: "50+ IoT devices",
-        dataVolume: "1M+ events/day",
-        downtime: "25% reduction",
-        responseTime: "40% faster",
-        savings: "$200K+ annually"
+        timeSaved: "3 days → 3 hours paper preparation",
+        audience: "200+ professionals at international conference",
+        automation: "End-to-end research paper generation",
+        novelty: "First-of-its-kind live poll integration"
       },
-      
       highlights: [
-        "Architected Azure IoT Hub solution processing 1M+ events daily",
-        "Built real-time Power BI dashboards for operational monitoring",
-        "Implemented predictive anomaly detection (25% downtime reduction)",
-        "Python scripts for data processing and alert logic",
-        "SQL database for historical analytics and reporting",
-        "Automated alerting system for critical equipment issues"
+        "First-of-its-kind application integrating live PowerPoint poll data with LLM paper generation",
+        "Automated literature review synthesis using large language models",
+        "Dynamic data visualisation generation from live audience poll responses",
+        "Reduced research paper preparation from 3 days to 3 hours",
+        "Successfully demonstrated at international AI in Orthodontics conference, Saudi Arabia",
+        "Presented to 200+ dental and orthodontic professionals"
       ],
-      
-      link: ""
+      link: "https://github.com/firruk/Research-Paper-Generator-Desktop-App"
     },
-    
+
     {
       id: 3,
-      title: "Predictive Maintenance ML System",
-      shortTitle: "Predictive Maintenance AI",
-      description: "Deep learning system analyzing industrial sensor data to predict equipment failures 72 hours in advance.",
-      
-      techHighlight: "ML pipeline: Data collection (LabVIEW), preprocessing, feature engineering (PCA/WPD), model training (CNN/LSTM), deployment.",
-      
-      problem: "Industrial equipment failures causing $500K+ unplanned downtime with no early warning system.",
-      solution: "Built end-to-end ML pipeline processing 1,000+ sensor samples achieving 94% fault classification accuracy.",
-      impact: "94% prediction accuracy, 72-hour advance warning enabling proactive maintenance. Published in 3 IEEE papers.",
-      
-      tech: ["Python", "TensorFlow", "Keras", "Pandas", "NumPy", "Scikit-learn", "LabVIEW", "Signal Processing", "PCA", "Wavelet Analysis"],
+      title: "Dental Radiograph Classification AI + NLP Chatbot",
+      shortTitle: "Dental AI Classifier",
+      description: "Deep learning classification system achieving 99% accuracy across 9 dental radiograph types using AlexNet, combined with an NLP-powered patient chatbot for denture-related queries.",
+      techHighlight: "AlexNet transfer learning for radiograph classification + NLP chatbot trained on patient response data for denture queries.",
+      problem: "Dental clinics manually identifying radiograph types and handling repetitive patient queries about dentures, creating inefficiency and inconsistency.",
+      solution: "Built a two-component AI system: AlexNet-based classifier identifying 9 radiograph types with 99% accuracy, and an NLP chatbot trained on common patient denture responses.",
+      impact: "99% classification accuracy across 9 radiograph types. Chatbot handles common patient queries automatically, reducing repetitive consultation time.",
+      tech: ["Python", "TensorFlow", "AlexNet", "Transfer Learning", "NLP", "Chatbot", "Deep Learning", "Image Classification"],
       year: "2024",
-      category: "Machine Learning",
-      
+      category: "Healthcare AI",
       relevanceByRole: {
-        mlEngineer: "Deep learning model architecture, hyperparameter tuning, production deployment.",
-        dataScientist: "Time-series analysis, feature engineering, statistical modeling, research.",
-        dataEngineer: "Sensor data pipelines, data preprocessing, feature store, model serving.",
-        softwareEngineer: "Python development, API integration, LabVIEW interfacing, system architecture.",
-        researcher: "Published 3 IEEE/Scopus papers, rigorous experimentation, academic writing."
+        mlEngineer: "Transfer learning with AlexNet, multi-class image classification, NLP model training.",
+        dataScientist: "Model evaluation, performance benchmarking, dataset preparation.",
+        softwareEngineer: "AI application development, model integration, chatbot implementation.",
+        dataAnalyst: "Patient data analysis, chatbot response mapping, classification reporting.",
+        healthcareAI: "Clinical AI application, radiograph analysis, patient interaction automation."
       },
-      
       metrics: {
-        dataProcessed: "1,000+ vibration signals",
-        accuracy: "94% classification",
-        improvement: "18% via feature engineering",
-        prediction: "72 hours advance",
-        impact: "$500K+ downtime prevention"
+        accuracy: "99% across 9 radiograph types",
+        model: "AlexNet (Transfer Learning)",
+        chatbot: "NLP-based patient query handling",
+        radiographTypes: "9 dental radiograph categories"
       },
-      
       highlights: [
-        "Developed CNN, LSTM, and hybrid architectures for comparison",
-        "94% fault classification accuracy on industrial data",
-        "18% performance boost through advanced feature engineering",
-        "Integrated with LabVIEW + NI DAQ for real-time data collection",
-        "Published research in 3 IEEE/Scopus journals",
-        "Production-ready system with 72-hour prediction window"
+        "99% classification accuracy across 9 dental radiograph types using AlexNet",
+        "Transfer learning approach for efficient model training on medical imaging data",
+        "NLP chatbot trained on real patient denture consultation responses",
+        "Dual-component system covering both image classification and patient interaction",
+        "Integrated into broader dental AI research ecosystem",
+        "Complements production Mask R-CNN system with lightweight classification capability"
       ],
-      
-      link: ""
+      link: "https://github.com/firruk/Dental-Radiograph-classification-and-chatbot-for-debentures"
     },
-    
+
     {
       id: 4,
-      title: "Full-Stack Web & Mobile Applications (8 Projects)",
-      shortTitle: "Full-Stack Portfolio",
-      description: "Suite of 8 client applications including e-commerce, booking systems, and business management tools achieving 98% satisfaction.",
-      
-      techHighlight: "Full-stack: Flutter/React Native (frontend), Laravel/Flask (backend), MySQL/PostgreSQL (database), REST APIs, deployment.",
-      
-      problem: "Clients needed custom business applications ranging from e-commerce to inventory management with tight deadlines.",
-      solution: "Delivered 8 full-stack applications end-to-end: requirements gathering, design, development, testing, deployment.",
-      impact: "$450K project revenue, 98% client satisfaction, applications serving 5,000+ daily users.",
-      
-      tech: ["Flutter", "React Native", "Laravel", "Flask", "MySQL", "PostgreSQL", "REST APIs", "Git", "Agile", "Postman"],
-      year: "2023-2024",
-      category: "Full-Stack Development",
-      
+      title: "AI-Based Interactive Robot System",
+      shortTitle: "AI Interaction Robot",
+      description: "Real-time interactive system integrating YOLOv3 object detection, FaceNet face recognition, SVM classification, and NLP chatbot for security, customer service, and entertainment applications.",
+      techHighlight: "Multi-model pipeline: YOLOv3 (detection) → FaceNet (128-dim embeddings) → SVM (classification) → NLP Chatbot (interaction), all running in real-time via webcam.",
+      problem: "Need for a robust, real-time interactive system that can identify individuals and engage them in meaningful conversation across security, retail, and entertainment contexts.",
+      solution: "Architected a seamless four-component AI pipeline: real-time object detection triggers face recognition, which identifies users and routes them to a contextual chatbot.",
+      impact: "Production-ready real-time system capable of continuous monitoring, dynamic user onboarding, and personalised interaction. Applicable across security, customer service, and entertainment.",
+      tech: ["Python", "YOLOv3", "FaceNet", "SVM", "NLP", "OpenCV", "TensorFlow", "Deep Learning", "Face Recognition"],
+      year: "2023",
+      category: "Computer Vision & AI",
       relevanceByRole: {
-        softwareEngineer: "Full SDLC experience, multiple tech stacks, client delivery, production systems.",
-        fullStackDev: "Frontend (Flutter, React Native), Backend (Laravel, Flask), Database (SQL).",
-        backendEngineer: "REST API design, database optimization, server-side logic, authentication.",
-        dataEngineer: "Database schema design, query optimization (45% performance improvement).",
-        projectManager: "Client communication, requirements gathering, project delivery, team collaboration."
+        mlEngineer: "Multi-model AI pipeline, real-time inference, face recognition, object detection.",
+        dataScientist: "Embedding generation, SVM classification, model integration and evaluation.",
+        softwareEngineer: "Real-time system architecture, webcam integration, dynamic user management.",
+        computerVision: "YOLOv3 detection, FaceNet embeddings, real-time video processing.",
+        aiResearcher: "Multi-modal AI system, NLP + CV integration, production deployment."
       },
-      
       metrics: {
-        projectsDelivered: "8 applications",
-        revenue: "$450K",
-        satisfaction: "98%",
-        users: "5,000+ daily",
-        performance: "45% query optimization"
+        detection: "Real-time YOLOv3 object detection",
+        recognition: "128-dimensional FaceNet embeddings",
+        classification: "SVM face identification",
+        interaction: "NLP-powered contextual chatbot",
+        applications: "Security, customer service, entertainment"
       },
-      
       highlights: [
-        "Delivered 8 production applications from concept to deployment",
-        "Full-stack: Flutter & React Native frontends + Laravel & Flask backends",
-        "Database optimization: 45% query time reduction (8.2s → 4.5s)",
-        "RESTful API design and implementation",
-        "Agile methodology with cross-functional teams",
-        "$450K project revenue with 98% client satisfaction",
-        "Serving 5,000+ daily active users across 7 business locations"
+        "Real-time YOLOv3 object detection triggering face recognition pipeline",
+        "FaceNet generating 128-dimensional facial embeddings for identity matching",
+        "SVM classifier trained on FaceNet embeddings for person identification",
+        "NLP chatbot enabling personalised user interaction post-recognition",
+        "Dynamic user management — new users added and embedded in real time",
+        "Seamlessly integrates Computer Vision, Deep Learning, and NLP in one system",
+        "Applicable to security, retail customer service, and entertainment platforms"
       ],
-      
-      link: ""
+      link: "https://github.com/firruk/AI-based-interaction-system"
     },
-    
+
     {
       id: 5,
-      title: "Investment Forecasting Model - Hackathon Winner",
+      title: "Investment Forecasting Model — Hackathon Winner",
       shortTitle: "ML Forecasting",
-      description: "Competition-winning machine learning model achieving top 3% performance among 100 data scientists.",
-      
-      techHighlight: "Ensemble ML: Feature engineering, XGBoost, hyperparameter optimization, model validation, production-ready code.",
-      
-      problem: "Predict investment returns with highest accuracy in competitive hackathon (100 participants).",
-      solution: "Built ensemble model with advanced feature engineering achieving RMSLE of 0.0409.",
-      impact: "1st place winner, top 3% performance, demonstrated competitive ML skills under time pressure.",
-      
-      tech: ["Python", "XGBoost", "Scikit-learn", "Pandas", "NumPy", "Feature Engineering", "Ensemble Methods"],
+      description: "1st place winning ML model at the Al Majlis AI Hackathon — the first AI competition in Oman using real Central Bank of Oman industry datasets.",
+      techHighlight: "Time-series forecasting: Feature engineering, ensemble methods (XGBoost), hyperparameter optimisation, model validation.",
+      problem: "Predict next 20 days of investment returns on anonymised Central Bank of Oman market and portfolio data with the highest accuracy among all participants.",
+      solution: "Built an ensemble time-series forecasting model with advanced feature engineering achieving RMSLE of 0.0409 — the best score in the competition.",
+      impact: "1st place winner. First AI hackathon in Oman with real industry data. Demonstrated competitive ML performance under 48-hour deadline pressure.",
+      tech: ["Python", "XGBoost", "Scikit-learn", "Pandas", "NumPy", "Feature Engineering", "Ensemble Methods", "Time-Series Forecasting"],
       year: "2023",
       category: "Data Science",
-      
       relevanceByRole: {
-        dataScientist: "Feature engineering, model selection, hyperparameter tuning, competitive performance.",
-        mlEngineer: "Production ML code, model deployment, performance optimization.",
-        quantAnalyst: "Financial modeling, time-series forecasting, risk analysis.",
-        dataAnalyst: "Data exploration, statistical analysis, insights generation.",
-        researcher: "Rigorous experimentation, systematic approach, documentation."
+        dataScientist: "Feature engineering, model selection, hyperparameter tuning, competition performance.",
+        mlEngineer: "Production ML code, model optimisation, performance benchmarking.",
+        quantAnalyst: "Financial time-series forecasting, investment return prediction, risk analysis.",
+        dataAnalyst: "Data exploration, statistical analysis, insights under competitive conditions.",
+        fintech: "Financial ML modelling with real Central Bank of Oman dataset."
       },
-      
       metrics: {
         accuracy: "RMSLE 0.0409",
-        ranking: "1st / 150 teams",
-        percentile: "Top 3%",
-        timeframe: "48-hour hackathon"
+        ranking: "1st Place",
+        participants: "100+ data scientists",
+        timeframe: "48-hour hackathon",
+        dataset: "Central Bank of Oman — real industry data"
       },
-      
       highlights: [
-        "1st place winner out of 100 competing teams",
-        "RMSLE: 0.0409",
-        "Ensemble modeling combining multiple algorithms",
-        "Advanced feature engineering with domain knowledge",
-        "Delivered under tight 48-hour deadline",
-        "Production-ready, well-documented code"
+        "1st place winner — Al Majlis AI Hackathon Investment Challenge",
+        "First AI hackathon in Oman using real Central Bank of Oman industry datasets",
+        "RMSLE of 0.0409 — best score among all participants",
+        "Forecasted next 20 days of investment returns on anonymised financial data",
+        "Advanced feature engineering with financial domain knowledge",
+        "Ensemble model combining multiple algorithms for maximum accuracy",
+        "Delivered under 48-hour competitive deadline"
       ],
-      
       link: "https://www.kaggle.com/code/mochufk/al-majlis-ai-hackathon-investment-challenge"
     },
-    
+
     {
       id: 6,
       title: "Student Analytics ML System (35K+ Records)",
       shortTitle: "Educational Analytics",
-      description: "SQL data analysis and ML prediction model for 35,000+ student records achieving 97% accuracy.",
-      
-      techHighlight: "Data analytics pipeline: SQL queries, Python analysis, feature engineering, classification models, insights reporting.",
-      
-      problem: "Educational institution needed to identify at-risk students early for targeted intervention.",
-      solution: "Analyzed 35K+ records with complex SQL queries, built ML classification model (97% accuracy), identified key engagement factors.",
-      impact: "97% prediction accuracy enabling early intervention. Insights led to new strategies improving student outcomes.",
-      
-      tech: ["Python", "SQL", "Scikit-learn", "Pandas", "Classification Models", "Data Visualization", "Statistical Analysis"],
+      description: "SQL data analysis and ML prediction model for 35,000+ student records achieving 97% accuracy in identifying at-risk students for early intervention.",
+      techHighlight: "Data analytics pipeline: Complex SQL queries, Python analysis, feature engineering, classification model, stakeholder reporting.",
+      problem: "Educational institution needed to proactively identify at-risk students early enough for targeted intervention before failure.",
+      solution: "Analysed 35K+ student records with advanced SQL queries, built an ML classification model achieving 97% accuracy, and identified the 5 key factors influencing student engagement.",
+      impact: "97% prediction accuracy enabling early intervention. Insights led to new institutional strategies improving student outcomes.",
+      tech: ["Python", "SQL", "Scikit-learn", "Pandas", "Classification Models", "Data Visualisation", "Statistical Analysis"],
       year: "2022",
       category: "Data Analytics",
-      
       relevanceByRole: {
-        dataAnalyst: "SQL analysis, data cleaning, visualization, stakeholder reporting.",
-        dataScientist: "Predictive modeling, feature importance, statistical testing.",
+        dataAnalyst: "SQL analysis, data cleaning, visualisation, stakeholder reporting.",
+        dataScientist: "Predictive modelling, feature importance, statistical testing.",
         mlEngineer: "Classification model development and validation.",
-        dataEngineer: "SQL optimization, data pipeline, quality assurance.",
+        dataEngineer: "SQL optimisation, data pipeline, quality assurance.",
         businessAnalyst: "Insights generation, recommendation development, impact measurement."
       },
-      
       metrics: {
         dataVolume: "35,000+ student records",
         accuracy: "97% prediction",
         timeframe: "10-month analysis",
-        insights: "5 key factors identified"
+        insights: "5 key engagement factors identified"
       },
-      
       highlights: [
-        "Analyzed 35,000+ student records using advanced SQL",
-        "97% accuracy predicting student engagement levels",
-        "Identified top 5 factors influencing student success",
-        "Complex multi-table joins and aggregations",
-        "Data visualization for stakeholder presentations",
-        "Actionable insights leading to policy changes"
+        "Analysed 35,000+ student records using advanced SQL multi-table joins and aggregations",
+        "97% accuracy predicting student engagement and at-risk classification",
+        "Identified top 5 factors influencing student success outcomes",
+        "Data visualisation dashboards for stakeholder presentations",
+        "Actionable insights leading directly to institutional policy changes"
       ],
-      
       link: "https://github.com/firruk/365_challenge_machine_learning/blob/main/365%20challenge%20-%20Copy/365_DATA_CHALLENGE_MACHINE_LEARNING.ipynb"
     }
   ],
-
   // ============================================================================
   // EXPERIENCE - Shows VERSATILITY across roles
   // ============================================================================
