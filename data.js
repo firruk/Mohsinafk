@@ -25,7 +25,7 @@ const portfolioData = {
   publications: [
     {
       id: 1,
-      title: "Intelligent Fault Diagnosis of Rotating Machinery Using Deep Learning Algorithms",
+      title: "Intelligent fault diagnosis of drill bit using Digital Twin Assisted deep learning classifiers of MLP, CNN, Hybrid MLP-CNN, and Hybrid CNN-MLP with PCA algorithm",
       journal: "IEEE/Scopus Indexed",
       year: 2025,
       authors: "Mohsina Firdous K., et al.",
@@ -35,18 +35,19 @@ const portfolioData = {
       techRelevance: "Demonstrates expertise in neural network architecture design, time-series analysis, and production ML deployment for critical systems."
     },
     {
-      id: 2,
-      title: "Comparison Analysis of ANN and XGBoost Algorithm with WPD in exploring AI in condition monitoring",
+      id: 4,
+      title: "Comparison Analysis of ANN and XGBoost Algorithm with WPD in exploring the application of Artificial Intelligence in condition monitoring for oil and gas industries",
       journal: "IEEE/Scopus Indexed",
       year: 2025,
       authors: "Mohsina Firdous K., et al.",
       abstract: "Advanced feature engineering research using Wavelet Packet Decomposition improving model performance by 18%. Applied to oil & gas industrial monitoring systems.",
-      link: "#",
+      link: "https://www.researchgate.net/publication/389533872_Comparison_Analysis_of_ANN_and_XGBoost_Algorithm_with_WPD_in_exploring_the_application_of_Artificial_Intelligence_in_condition_monitoring_for_oil_and_gas_industries",
       tags: ["ANN", "XGBoost", "Feature Engineering", "Signal Processing"],
       techRelevance: "Shows advanced ML techniques, feature engineering skills, and ability to optimize model performance through algorithmic innovation."
     },
+    
     {
-      id: 3,
+      id: 2,
       title: "Performance Analysis of ML and DL Techniques in Diagnosing Imbalance Using Machine Fault Simulator",
       journal: "International Journal of Engineering Trends and Technology",
       year: 2024,
@@ -56,8 +57,20 @@ const portfolioData = {
       tags: ["Machine Learning", "Deep Learning", "Performance Benchmarking"],
       techRelevance: "Demonstrates systematic approach to algorithm selection and performance optimization for production systems."
     },
+     {
+      id: 3,
+      title: "Intelligent Fault Diagnosis of Rotating Machinery Using Deep Learning Algorithms: A Comparative Analysis of MLP, CNN, RNN, and LSTM",
+      journal: "SSRG International Journal of Electrical and Electronics Engineering",
+      year: 2024,
+      authors: "Mohsina Firdous K., et al.",
+      abstract:"The study shows that CNN has given better results than other deep learning algorithms, such as MLP, RNN, and LSTM, in fault diagnosis of rotating machinery. Future research could explore applying these techniques to different types of machinery and fault conditions.",
+      link: "https://www.internationaljournalssrg.org/IJEEE/2024/Volume11-Issue9/IJEEE-V11I9P127.pdf",
+      tags: ["Machine Learning", "Deep Learning", "Performance Benchmarking"],
+      techRelevance: "Demonstrates systematic approach to algorithm selection and performance optimization for production systems."
+    },
+    
     {
-      id: 4,
+      id: 5,
       title: "Machine Learning based Financial Management Mobile Application",
       journal: "SCOPUS Indexed",
       year: 2023,
@@ -68,7 +81,7 @@ const portfolioData = {
       techRelevance: "Shows full-stack development capability combining mobile frontend, backend APIs, and ML model integration."
     },
     {
-      id: 5,
+      id: 6,
       title: "Advanced Mobile Application Powered with ML for Healthcare Services",
       journal: "Journal of Engineering and Applied Sciences Technology",
       year: 2022,
