@@ -1,26 +1,24 @@
 // Portfolio Data - Versatile Tech Professional
-// Optimized for: Data Analyst | ML Engineer | Data Scientist | Software Engineer | Tech Roles
-// Last Updated: February 2025
+// Optimized for: ML Engineer | Data Analyst | Data Scientist | Software Engineer
+// Last Updated: February 2026
 
 const portfolioData = {
   personalInfo: {
     name: "Mohsina Firdous Kamarudeen",
     
-    // VERSATILE TITLE - Can be read multiple ways
-    title: "ML Engineer • Data Scientist • Software Engineer",
-    tagline: "Building Production AI Systems & Data Solutions | Python • SQL • TensorFlow • Cloud",
+    title: "ML Engineer • Data Analyst • Full-Stack AI",
+    tagline: "Production AI Systems | 92% CV Accuracy | 5 IEEE/Scopus Papers | Sydney, Full Work Rights",
     
     email: "mohsinafirdousk@gmail.com",
     phone: "+61 494 303 526",
     location: "Sydney, NSW, Australia",
-    linkedin: "linkedin.com/in/mohsina-firdous-k",
+    linkedin:  "linkedin.com/in/mohsina-firdous-k",
     github: "github.com/firruk",
     portfolio: "https://firruk.github.io/Mohsinafk/",
-    
   },
    
   // ============================================================================
-  // PUBLICATIONS - Shows DEPTH and RESEARCH ability
+  // PUBLICATIONS
   // ============================================================================
   publications: [
     {
@@ -45,7 +43,6 @@ const portfolioData = {
       tags: ["ANN", "XGBoost", "Feature Engineering", "Signal Processing"],
       techRelevance: "Shows advanced ML techniques, feature engineering skills, and ability to optimize model performance through algorithmic innovation."
     },
-    
     {
       id: 2,
       title: "Performance Analysis of ML and DL Techniques in Diagnosing Imbalance Using Machine Fault Simulator",
@@ -57,18 +54,17 @@ const portfolioData = {
       tags: ["Machine Learning", "Deep Learning", "Performance Benchmarking"],
       techRelevance: "Demonstrates systematic approach to algorithm selection and performance optimization for production systems."
     },
-     {
+    {
       id: 3,
       title: "Intelligent Fault Diagnosis of Rotating Machinery Using Deep Learning Algorithms: A Comparative Analysis of MLP, CNN, RNN, and LSTM",
       journal: "SSRG International Journal of Electrical and Electronics Engineering",
       year: 2024,
       authors: "Mohsina Firdous K., et al.",
-      abstract:"The study shows that CNN has given better results than other deep learning algorithms, such as MLP, RNN, and LSTM, in fault diagnosis of rotating machinery. Future research could explore applying these techniques to different types of machinery and fault conditions.",
+      abstract: "The study shows that CNN has given better results than other deep learning algorithms, such as MLP, RNN, and LSTM, in fault diagnosis of rotating machinery. Future research could explore applying these techniques to different types of machinery and fault conditions.",
       link: "https://www.internationaljournalssrg.org/IJEEE/2024/Volume11-Issue9/IJEEE-V11I9P127.pdf",
       tags: ["Machine Learning", "Deep Learning", "Performance Benchmarking"],
       techRelevance: "Demonstrates systematic approach to algorithm selection and performance optimization for production systems."
     },
-    
     {
       id: 5,
       title: "Machine Learning based Financial Management Mobile Application",
@@ -94,9 +90,9 @@ const portfolioData = {
   ],
 
   // ============================================================================
-  // PROJECTS - Showcases BREADTH across tech stack
+  // PROJECTS
   // ============================================================================
-projects: [
+  projects: [
     {
       id: 1,
       title: "AI-Powered Medical Imaging Platform",
@@ -105,22 +101,21 @@ projects: [
       techHighlight: "End-to-end system: React Native frontend, Flask REST API, TensorFlow/Mask R-CNN model serving, PostgreSQL database, automated PDF generation, CVAT annotation pipeline.",
       problem: "Healthcare providers spending 15-20 minutes manually reviewing medical images per patient, creating workflow bottlenecks.",
       solution: "Built production ML system with cross-platform mobile app enabling real-time AI classification (92% accuracy) and automated clinical reporting.",
-      impact: "87% time reduction (15 mins → 2 mins per scan), 70% reduction in documentation time. Deployed across clinics serving 150+ patients/month.",
+      impact: "70% reduction in documentation time. 40% improvement in dataset quality. Deployed and presented to 150+ clinicians at international conference.",
       tech: ["Python", "TensorFlow", "PyTorch", "Mask R-CNN", "React Native", "Flask", "PostgreSQL", "REST APIs", "CVAT", "Docker", "LLMs"],
       year: "2025",
       category: "Full-Stack AI",
       relevanceByRole: {
         mlEngineer: "Computer Vision model training, optimization, and deployment. 92% classification, 88% mAP segmentation.",
-        dataScientist: "10,000+ image dataset analysis, feature engineering, model performance optimization.",
+        dataScientist: "1,000+ image dataset analysis, feature engineering, model performance optimization.",
         softwareEngineer: "React Native app, Flask backend, REST APIs, PostgreSQL, automated PDF reporting pipeline.",
         dataEngineer: "ETL pipeline for medical images, annotation workflow, data quality validation.",
         fullStack: "Mobile frontend + backend API + database + ML model integration + deployment."
       },
       metrics: {
-        dataProcessed: "10,000+ medical images",
         accuracy: "92% classification, 88% segmentation mAP",
-        performance: "87% time reduction",
-        scale: "150+ patients/month",
+        performance: "70% documentation time reduction",
+        annotation: "400 → 120 hours processing time",
         techStack: "11 technologies integrated"
       },
       highlights: [
@@ -134,7 +129,6 @@ projects: [
       ],
       link: "https://github.com/firruk/ODC-Dental-Teeth-Analyses-Website"
     },
-
     {
       id: 2,
       title: "Research Paper Generator Desktop App",
@@ -151,8 +145,7 @@ projects: [
         mlEngineer: "LLM integration, prompt engineering, automated NLP pipeline.",
         dataScientist: "Automated data analysis, visualisation generation, research synthesis.",
         softwareEngineer: "Desktop application architecture, API integration, workflow automation.",
-        dataAnalyst: "Automated reporting, data storytelling, insights generation at scale.",
-        researcher: "Research automation, literature review synthesis, conference presentation tool."
+        dataAnalyst: "Automated reporting, data storytelling, insights generation at scale."
       },
       metrics: {
         timeSaved: "3 days → 3 hours paper preparation",
@@ -170,7 +163,6 @@ projects: [
       ],
       link: "https://github.com/firruk/Research-Paper-Generator-Desktop-App"
     },
-
     {
       id: 3,
       title: "Dental Radiograph Classification AI + NLP Chatbot",
@@ -186,9 +178,7 @@ projects: [
       relevanceByRole: {
         mlEngineer: "Transfer learning with AlexNet, multi-class image classification, NLP model training.",
         dataScientist: "Model evaluation, performance benchmarking, dataset preparation.",
-        softwareEngineer: "AI application development, model integration, chatbot implementation.",
-        dataAnalyst: "Patient data analysis, chatbot response mapping, classification reporting.",
-        healthcareAI: "Clinical AI application, radiograph analysis, patient interaction automation."
+        softwareEngineer: "AI application development, model integration, chatbot implementation."
       },
       metrics: {
         accuracy: "99% across 9 radiograph types",
@@ -201,12 +191,10 @@ projects: [
         "Transfer learning approach for efficient model training on medical imaging data",
         "NLP chatbot trained on real patient denture consultation responses",
         "Dual-component system covering both image classification and patient interaction",
-        "Integrated into broader dental AI research ecosystem",
-        "Complements production Mask R-CNN system with lightweight classification capability"
+        "Integrated into broader dental AI research ecosystem"
       ],
       link: "https://github.com/firruk/Dental-Radiograph-classification-and-chatbot-for-debentures"
     },
-
     {
       id: 4,
       title: "AI-Based Interactive Robot System",
@@ -215,23 +203,20 @@ projects: [
       techHighlight: "Multi-model pipeline: YOLOv3 (detection) → FaceNet (128-dim embeddings) → SVM (classification) → NLP Chatbot (interaction), all running in real-time via webcam.",
       problem: "Need for a robust, real-time interactive system that can identify individuals and engage them in meaningful conversation across security, retail, and entertainment contexts.",
       solution: "Architected a seamless four-component AI pipeline: real-time object detection triggers face recognition, which identifies users and routes them to a contextual chatbot.",
-      impact: "Production-ready real-time system capable of continuous monitoring, dynamic user onboarding, and personalised interaction. Applicable across security, customer service, and entertainment.",
+      impact: "Production-ready real-time system capable of continuous monitoring, dynamic user onboarding, and personalised interaction.",
       tech: ["Python", "YOLOv3", "FaceNet", "SVM", "NLP", "OpenCV", "TensorFlow", "Deep Learning", "Face Recognition"],
       year: "2023",
       category: "Computer Vision & AI",
       relevanceByRole: {
         mlEngineer: "Multi-model AI pipeline, real-time inference, face recognition, object detection.",
         dataScientist: "Embedding generation, SVM classification, model integration and evaluation.",
-        softwareEngineer: "Real-time system architecture, webcam integration, dynamic user management.",
-        computerVision: "YOLOv3 detection, FaceNet embeddings, real-time video processing.",
-        aiResearcher: "Multi-modal AI system, NLP + CV integration, production deployment."
+        softwareEngineer: "Real-time system architecture, webcam integration, dynamic user management."
       },
       metrics: {
         detection: "Real-time YOLOv3 object detection",
         recognition: "128-dimensional FaceNet embeddings",
         classification: "SVM face identification",
-        interaction: "NLP-powered contextual chatbot",
-        applications: "Security, customer service, entertainment"
+        interaction: "NLP-powered contextual chatbot"
       },
       highlights: [
         "Real-time YOLOv3 object detection triggering face recognition pipeline",
@@ -239,12 +224,10 @@ projects: [
         "SVM classifier trained on FaceNet embeddings for person identification",
         "NLP chatbot enabling personalised user interaction post-recognition",
         "Dynamic user management — new users added and embedded in real time",
-        "Seamlessly integrates Computer Vision, Deep Learning, and NLP in one system",
-        "Applicable to security, retail customer service, and entertainment platforms"
+        "Seamlessly integrates Computer Vision, Deep Learning, and NLP in one system"
       ],
       link: "https://github.com/firruk/AI-based-interaction-system"
     },
-
     {
       id: 5,
       title: "Investment Forecasting Model — Hackathon Winner",
@@ -260,14 +243,11 @@ projects: [
       relevanceByRole: {
         dataScientist: "Feature engineering, model selection, hyperparameter tuning, competition performance.",
         mlEngineer: "Production ML code, model optimisation, performance benchmarking.",
-        quantAnalyst: "Financial time-series forecasting, investment return prediction, risk analysis.",
-        dataAnalyst: "Data exploration, statistical analysis, insights under competitive conditions.",
-        fintech: "Financial ML modelling with real Central Bank of Oman dataset."
+        dataAnalyst: "Data exploration, statistical analysis, insights under competitive conditions."
       },
       metrics: {
         accuracy: "RMSLE 0.0409",
         ranking: "1st Place",
-        participants: "100+ data scientists",
         timeframe: "48-hour hackathon",
         dataset: "Central Bank of Oman — real industry data"
       },
@@ -282,7 +262,6 @@ projects: [
       ],
       link: "https://www.kaggle.com/code/mochufk/al-majlis-ai-hackathon-investment-challenge"
     },
-
     {
       id: 6,
       title: "Student Analytics ML System (35K+ Records)",
@@ -298,14 +277,11 @@ projects: [
       relevanceByRole: {
         dataAnalyst: "SQL analysis, data cleaning, visualisation, stakeholder reporting.",
         dataScientist: "Predictive modelling, feature importance, statistical testing.",
-        mlEngineer: "Classification model development and validation.",
-        dataEngineer: "SQL optimisation, data pipeline, quality assurance.",
-        businessAnalyst: "Insights generation, recommendation development, impact measurement."
+        mlEngineer: "Classification model development and validation."
       },
       metrics: {
         dataVolume: "35,000+ student records",
         accuracy: "97% prediction",
-        timeframe: "10-month analysis",
         insights: "5 key engagement factors identified"
       },
       highlights: [
@@ -318,192 +294,147 @@ projects: [
       link: "https://github.com/firruk/365_challenge_machine_learning/blob/main/365%20challenge%20-%20Copy/365_DATA_CHALLENGE_MACHINE_LEARNING.ipynb"
     }
   ],
+
   // ============================================================================
-  // EXPERIENCE - Shows VERSATILITY across roles
+  // EXPERIENCE
   // ============================================================================
   experience: [
     {
       id: 1,
-      role: "ML Engineer & Full-Stack Developer",
-      company: "Healthcare Technology - Oman Dental College",
-      location: "Remote collaboration",
-      duration: "Jan 2025 - Present",
-      
-      // Description appeals to MULTIPLE roles
-      description: "Building production AI systems and full-stack applications for healthcare. Technical lead for system presented at international AI conference. End-to-end ownership: ML models, mobile app, backend APIs, data pipelines, deployment.",
-      
+      role: "ML Engineer — Dental Imaging AI",
+      company: "Clinical AI Research Project (Oman Dental College Partnership)",
+      location: "Remote",
+      duration: "Jan 2025 – Present",
+      description: "End-to-end technical lead for production AI systems and full-stack applications in healthcare. ML models, mobile app, backend APIs, data pipelines, and international conference presentation.",
       achievements: [
-        "Built production Computer Vision system: 92% classification, 88% segmentation on 1,000+ images",
-        "Developed cross-platform mobile app (React Native + Flask REST API) ",
-        "Implemented ML inference pipeline with automated quality checks and reporting",
-        "Streamlined data annotation workflow improving quality 40% ",
-        "Created LLM-powered automation tool reducing research synthesis from 3 days to 3 hours",
-        "Technical lead:the Research generator project was showcased at international conference to 200+ professionals by the client"
+        "Engineered production Computer Vision system: 92% classification accuracy and 88% segmentation mAP on 1,000+ dental radiographs using Mask R-CNN",
+        "Shipped cross-platform mobile app (React Native + Flask) with 99% accuracy across 9 radiograph types",
+        "Designed automated PDF reporting engine reducing clinical documentation time by 70%",
+        "Optimised CVAT annotation workflows — 40% dataset quality improvement, processing time cut from 400 to 120 hours",
+        "Built LLM-powered research automation tool cutting paper preparation from 3 days to 3 hours",
+        "Technical lead for AI solutions presented to 200+ dental professionals at international conference in Saudi Arabia"
       ],
-      
-      // What each role sees
-      keyTechnologies: "Python, TensorFlow, PyTorch, React Native, Flask, PostgreSQL, REST APIs, Docker, CVAT",
-      
+      keyTechnologies: "Python, TensorFlow, PyTorch, Mask R-CNN, React Native, Flask, PostgreSQL, Docker, CVAT, LLMs",
       skillsDemonstrated: [
-        "Machine Learning: Model training, optimization, deployment",
+        "Machine Learning: Model training, optimization, production deployment",
         "Full-Stack Development: Mobile frontend, backend APIs, databases",
         "Data Engineering: ETL pipelines, data quality, annotation workflows",
-        "Cloud Deployment: Production system serving real users",
         "Technical Leadership: Conference presentation, documentation"
       ]
     },
-    
     {
       id: 2,
-      role: "Technical Research Assistant",
+      role: "ML Research Analyst — Predictive Maintenance",
       company: "National University of Science and Technology, Oman",
       location: "Muscat, Oman",
-      duration: "Jan 2024 - Dec 2024",
-      
-      description: "Led R&D projects in predictive analytics and deep learning for industrial applications. Published 4 IEEE/Scopus papers. Built end-to-end ML pipelines from data collection to model deployment.",
-      
+      duration: "Jan 2024 – Dec 2024",
+      description: "R&D lead bridging complex industrial sensor data and operational decision-making. Published researcher with 3 IEEE/Scopus papers.",
       achievements: [
-        "Developed deep learning models (CNN, LSTM, Hybrid) achieving 94% fault classification accuracy",
-        "Processed 1,000+ sensor signals: data collection, cleaning, feature engineering, model training",
-        "Improved model performance 18% through advanced feature engineering (PCA, Wavelet Packet Decomposition)",
-        "Built data visualization dashboards translating ML results for non-technical stakeholders",
-        "Published 3 peer-reviewed papers in IEEE/Scopus-indexed journals",
-        "Collaborated with industry partners validating models against real-world failure scenarios"
+        "Engineered deep learning models (CNN, LSTM, Hybrid architectures) achieving 94% accuracy in industrial fault classification",
+        "Processed and cleaned 1,000+ high-frequency vibration signal samples using LabVIEW and NI DAQ systems",
+        "Boosted model performance by 18% and cut false positive rates by 22% through PCA and Wavelet Packet Decomposition",
+        "Produced stakeholder-facing dashboards translating ML outputs into actionable maintenance recommendations",
+        "Lead author of 3 peer-reviewed IEEE/Scopus-indexed publications on predictive analytics and fault diagnosis"
       ],
-      
-      keyTechnologies: "Python, TensorFlow, Pandas, NumPy, Scikit-learn, LabVIEW, Signal Processing, Statistical Analysis",
-      
+      keyTechnologies: "Python, TensorFlow, Pandas, NumPy, Scikit-learn, LabVIEW, NI DAQ, PCA, WPD",
       skillsDemonstrated: [
         "Machine Learning: Algorithm development, benchmarking, optimization",
         "Data Science: Time-series analysis, statistical modeling, EDA",
-        "Research: Experimental design, technical writing, peer review",
-        "Data Engineering: Sensor data pipelines, preprocessing, quality control",
-        "Communication: Academic papers, stakeholder presentations"
+        "Research: Technical writing, peer review, academic publication",
+        "Communication: Stakeholder dashboards, industrial reporting"
       ]
     },
-    
     {
       id: 3,
-      role: "Software Engineer",
+      role: "Software Engineer — IoT & Data Analytics",
       company: "IRTS Oman",
       location: "Muscat, Oman",
-      duration: "Jul 2023 - Jun 2024",
-      
-      description: "Full-stack development, cloud architecture, and data engineering. Delivered 8 client projects ($450K revenue, 98% satisfaction). Built IoT platforms, optimized databases, developed APIs.",
-      
+      duration: "Jun 2023 – Jul 2024",
+      description: "Full-stack development, cloud architecture, and data engineering in a startup environment. Bridging raw sensor data and executive decision-making.",
       achievements: [
-        "Developed full-stack applications (Flutter/Laravel) from requirements to deployment",
-        "Performed comprehensive database performance analysis and optimization on MySQL schemas. ",
-        "Built automated data pipeline using Python scripts to extract, transform, and load (ETL) data from multiple sources into centralized data warehouse . ",
-        "Leveraged LLMs (ChatGPT API) for code optimization and rapid prototyping, increasing development efficiency by 30%.",
-        "Designed and built interactive Power BI dashboards visualizing sensor telemetry trends, KPIs, and operational metrics, empowering data-driven decision-making for plant managers and reducing response time to equipment issues by 40%. "
+        "Designed and deployed interactive Power BI dashboards for plant managers, reducing equipment issue response times by 40%",
+        "Architected automated Python ETL pipelines centralising data from disparate industrial sources, improving data accessibility by 30%",
+        "Built real-time IoT analytics platform using Azure IoT Hub, achieving 25% reduction in equipment downtime through predictive anomaly detection",
+        "Managed end-to-end lifecycle of web and mobile applications (Flutter, Laravel, MySQL) maintaining 99.9% system uptime",
+        "Integrated LLMs (ChatGPT API) into development workflows, increasing coding efficiency by 30%"
       ],
-      
-      keyTechnologies: "Python, SQL, Azure IoT Hub, Power BI, Flutter, Laravel, MySQL, REST APIs, Docker, Git",
-      
+      keyTechnologies: "Python, Power BI, Azure IoT Hub, Flutter, Laravel, MySQL, ETL Pipelines, Docker, Git",
       skillsDemonstrated: [
-        "Software Engineering: Full SDLC, multiple tech stacks, Agile methodology",
-        "Cloud Architecture: Azure IoT Hub, event streaming, monitoring",
         "Data Engineering: ETL pipelines, database optimization, data quality",
+        "Business Intelligence: Power BI dashboards, real-time telemetry, KPI reporting",
         "Full-Stack Development: Frontend, backend, databases, APIs",
-        "DevOps: CI/CD, version control, deployment automation"
+        "Cloud: Azure IoT Hub, event streaming, monitoring"
       ]
     },
-    
     {
       id: 4,
-      role: "Data Analyst(Financial Administration)",
+      role: "Junior Data Analyst — Financial Operations",
       company: "Fabrication Industry Services Co LLC",
       location: "Muscat, Oman",
-      duration: "Apr 2021 - Jun 2023",
-      
-      description: "Business intelligence and financial data analytics for multi-location operations. SQL, Excel, Tableau. $2M+ monthly transaction analysis.",
-      
+      duration: "Apr 2021 – Jun 2023",
+      description: "Financial analytics and regulatory compliance across a 7-branch enterprise. SQL, Tableau, Tally ERP.",
       achievements: [
-        "Analyzed multi-branch financial data across 7 locations using Excel, Tally ERP, and SQL queries, ensuring data consistency, accuracy, and compliance with financial reporting standards.",
-        "Designed 10+ interactive Tableau dashboards to visualize KPIs, enabling data-driven decision-making for senior management and improving financial transparency.",
-        "Optimized quarterly VAT payments, reducing company tax liability by 10% through strategic analysis of Oman tax regulations and financial planning."
+        "Synthesised financial data across 7 branches using SQL and Tally ERP, ensuring 100% accuracy in compliance reporting and multi-million dollar ledger reconciliations",
+        "Designed 10+ Tableau executive dashboards tracking KPIs, enabling senior management to identify and eliminate operational bottlenecks",
+        "Automated payroll and procurement workflows achieving 20% reduction in administrative overhead costs",
+        "Optimised VAT reporting and financial planning, reducing total tax liability by 10% through strategic data analysis"
       ],
-      
-      keyTechnologies: "SQL, Tableau, Excel (Advanced), Python, Tally ERP, Statistical Analysis",
-      
+      keyTechnologies: "SQL, Tally ERP, Tableau, Excel, Financial Reporting",
       skillsDemonstrated: [
-        "Data Analysis: SQL queries, statistical analysis, trend identification",
+        "Data Analysis: SQL queries, statistical analysis, financial trend identification",
         "Business Intelligence: Dashboard design, KPI tracking, executive reporting",
-        "Data Engineering: ETL automation, data quality, process optimization",
-        "Business Impact: Cost savings, efficiency gains, forecast accuracy",
-        "Communication: Stakeholder presentations, financial reporting"
+        "Process Automation: ETL automation, data quality, workflow optimisation",
+        "Business Impact: Cost savings, compliance, multi-branch reconciliation"
       ]
     }
   ],
 
   // ============================================================================
-  // SKILLS - Organized to appeal to MULTIPLE roles
+  // SKILLS
   // ============================================================================
   skills: {
-    "Programming & Software Engineering": [
-      "Python (Advanced: Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch)",
-      "SQL (MySQL, PostgreSQL - Complex queries, optimization, database design)",
-      "JavaScript / TypeScript",
-      "Git & GitHub (Version control, collaboration, CI/CD)",
-      "API Development (REST, Flask, Laravel)",
-      "Agile & Scrum methodologies"
+    "ML & Deep Learning": [
+      "TensorFlow, PyTorch, Keras, Scikit-learn",
+      "CNN, LSTM, Hybrid Architectures, Transfer Learning",
+      "Model Deployment & MLOps (Flask, TensorFlow Lite, Docker)",
+      "Feature Engineering & Selection (PCA, WPD)",
+      "Ensemble Methods (XGBoost, Random Forest)",
+      "Time-Series Forecasting"
     ],
-    
-    "Machine Learning & AI": [
-      "Deep Learning (TensorFlow, PyTorch, Keras)",
-      "Computer Vision (YOLO, R-CNN, Mask R-CNN, Detectron2)",
-      "Supervised & Unsupervised Learning",
-      "Model Deployment & MLOps",
-      "Feature Engineering & Selection",
-      "Time-Series Forecasting",
-      "Ensemble Methods (XGBoost, Random Forest)"
+    "Computer Vision": [
+      "Mask R-CNN, YOLOv8, Faster R-CNN, Detectron2",
+      "Image Segmentation & Object Detection",
+      "AlexNet Transfer Learning",
+      "CVAT Data Annotation",
+      "Medical Image Analysis"
     ],
-    
-    "Data Science & Analytics": [
-      "Statistical Analysis & Hypothesis Testing",
-      "Exploratory Data Analysis (EDA)",
-      "A/B Testing & Experimentation",
-      "Data Visualization (Matplotlib, Seaborn)",
-      "Business Intelligence (Tableau, Power BI)",
-      "Predictive Modeling",
-      "Data Storytelling for stakeholders"
+    "Data Analytics & BI": [
+      "Python (Pandas, NumPy, Matplotlib, Seaborn)",
+      "SQL (MySQL, PostgreSQL — complex queries)",
+      "Tableau, Power BI, KPI Dashboard Development",
+      "Statistical Analysis & A/B Testing",
+      "Data Storytelling & Executive Reporting"
     ],
-    
-    "Full-Stack Development": [
-      "Frontend: React Native, Flutter, HTML/CSS/JS",
-      "Backend: Flask, Laravel, Node.js",
-      "Databases: MySQL, PostgreSQL, NoSQL",
-      "Mobile Development (iOS & Android)",
-      "Web Development (responsive, performant)",
-      "RESTful API Design & Integration"
-    ],
-    
-    "Cloud & Infrastructure": [
-      "Azure (IoT Hub, Cloud Services)",
-      "Docker & Containerization",
-      "CI/CD Pipelines",
-      "System Architecture & Design",
-      "Microservices patterns",
-      "DevOps best practices"
-    ],
-    
     "Data Engineering": [
       "ETL Pipeline Development",
-      "Data Warehousing concepts",
-      "Real-Time Data Streaming",
-      "Database Performance Optimization",
-      "Data Quality & Validation",
-      "Large-scale data processing"
+      "Python Automation",
+      "Azure IoT Hub & Real-Time Streaming",
+      "Database Design & Optimisation",
+      "Data Quality & Validation"
     ],
-    
-    "Tools & Platforms": [
-      "Jupyter Notebooks, VS Code, PyCharm",
-      "Power BI, Tableau (Advanced)",
-      "Excel (Advanced: VBA, Power Query)",
-      "Postman (API testing)",
-      "CVAT (Data annotation)",
-      "LabVIEW (Industrial systems)"
+    "Full-Stack Development": [
+      "React Native, Flutter (Mobile)",
+      "Flask, Laravel (Backend)",
+      "MySQL, PostgreSQL (Databases)",
+      "RESTful API Design & Integration",
+      "LLM Integration (ChatGPT API, Claude AI)"
+    ],
+    "MLOps & Cloud": [
+      "Docker & Containerisation",
+      "Git/GitHub & CI/CD",
+      "Azure IoT Hub",
+      "LabVIEW & NI DAQ (Industrial)",
+      "Jupyter, VS Code, Postman"
     ]
   },
 
@@ -517,17 +448,15 @@ projects: [
       institution: "National University of Science and Technology, Oman",
       institutionNote: "Accredited by Oman Academic Accreditation Authority",
       year: "2018 - 2022",
-      
       relevantCoursework: [
         "Data Structures & Algorithms",
         "Machine Learning & Artificial Intelligence",
         "Database Management Systems",
         "Software Engineering & Design Patterns",
         "Statistical Analysis & Data Analytics",
-        "Cloud Computing & Distributed Systems",
-        "Business Intelligence & Data Warehousing"
+        "Business Intelligence & Data Warehousing",
+        "Business Requirements Analysis & Project Management"
       ],
-      
       honoursProject: "Applied Machine Learning research published in peer-reviewed journals"
     }
   ],
@@ -536,16 +465,17 @@ projects: [
   // CERTIFICATIONS & ACHIEVEMENTS
   // ============================================================================
   certifications: [
-    "IELTS Academic Overall Band Score 8.0",
-    "SQL - MySQL for Data Analytics and Business Intelligence",
+    "IELTS Academic — Overall Band Score 8.0",
+    "SQL — MySQL for Data Analytics and Business Intelligence",
     "Python for Research",
     "Linear Algebra and Feature Selection",
-    "Statistics Foundations"
+    "Statistics Foundations: The Basics"
   ],
 
   awards: [
-    "3x Awards of Excellence (Meritorious Performance)",
-    "First Prize - Best Technical Project Competition",
-    "Hackathon Winner - Investment Forecast Model (RMSLE: 0.0409)"
+    "Hackathon Winner — Al Majlis AI Hackathon, Investment Challenge (RMSLE: 0.0409)",
+    "3× Awards of Excellence for Meritorious Academic Performance",
+    "First Prize — Best Technical Project Competition",
+    "Certificate of Merit"
   ],
 };
